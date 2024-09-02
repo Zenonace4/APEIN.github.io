@@ -288,11 +288,11 @@ body {
     align-items: center;
 }
 
-.inf-img {
+.info-img {
     width: 50%;
 }
 
-.inf-img img {
+.info-img img {
     width: 500px;
     height: 250px;
 }
