@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #080202;
+    background-color: #3910f0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -181,7 +181,7 @@ body {
 }
 
 .products {
-    background-color: #0d0d0d;
+    background-color: #21029d;
 }
 
 .tabs {
@@ -331,7 +331,7 @@ body {
 
 .horario {
     padding: 100pX 0px;
-    background-color: #0d0d0d;
+    background-color: #21029d;
 }
 
 .horario-info h2 {
@@ -472,7 +472,8 @@ body {
     .tabs label {
         width: 33%;
     }
-     .product {
+
+    .product {
         flex-direction: column;
     }
 
