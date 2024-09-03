@@ -45,8 +45,8 @@ body {
 
 .menu {
     position: absolute;
-    top: 20px;
-    left: 0;
+    top: 10px;
+    left: 0px;
     right: 0;
     display: flex;
     justify-content: center;
@@ -58,11 +58,12 @@ body {
 }
 
 .menu-1 {
-    margin-right: 180px;
+    margin-right: 100px;
+    align-items: center;
 }
 
 .menu-2 {
-    margin-left: 180px;
+    margin-left: 140px;
     display: flex;
     align-items: center;
 }
@@ -72,7 +73,15 @@ body {
 }
 
 .logo-2 {
-    width: 150px;
+    margin-left: 80px;
+    width: 200px;
+
+}
+
+.logo-3 {
+    margin-left: 80px;
+    width: 240px;
+
 }
 
 .socials {
@@ -178,6 +187,10 @@ body {
 .slider-img img {
     margin-right: 225px;
     width: 550px;
+}
+
+.header-content {
+    background-color: #3910f0;
 }
 
 .products {
@@ -365,7 +378,7 @@ body {
 }
 
 .map {
-    filter:  invert(92%) contrast(93%);
+    filter: grayscale(100%) invert(92%) contrast(93%);
 }
 
 .footer {
@@ -398,12 +411,21 @@ body {
     }
 
     .logo-1 {
-        width: 100px;
+        margin-left: 0;
+        width: 140px;
+        align-items: center;
+
     }
 
     .logo-2 {
         width: 0;
     }
+
+    .logo-3 {
+        margin-left: 20%;
+        width: 200px;
+    }
+
 
     .menu label {
         display: initial;
@@ -451,8 +473,8 @@ body {
     }
 
     .btn-1 {
-        padding: 10px 25px;
-        font-size: 14px;
+        padding: 10px 10px;
+        font-size: 10px;
     }
 
     .slider-img {
@@ -547,7 +569,7 @@ body {
     }
 
     .horario-info h2 {
-        font-size: 50px;
+        font-size: 42px;
         margin-bottom: 15px;
     }
 
