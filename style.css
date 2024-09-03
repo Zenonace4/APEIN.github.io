@@ -378,7 +378,7 @@ body {
 }
 
 .map {
-    filter: grayscale(100%) invert(92%) contrast(93%);
+    filter:  invert(92%) contrast(93%);
 }
 
 .footer {
