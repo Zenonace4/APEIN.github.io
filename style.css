@@ -320,6 +320,7 @@ body {
 }
 
 .info-img img {
+    border-radius: 10px;
     width: 500px;
     height: 250px;
 }
