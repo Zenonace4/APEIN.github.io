@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@
 body {
     background: linear-gradient(to right, #107acc, #142157);
 
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif, 'montserrat';
 }
 
 .container {
@@ -151,6 +152,7 @@ body {
 }
 
 .slider-txt h1 {
+    font-size: 'montserrat';
     text-align: center;
     font-size: 50px;
     color: #FFFFFF;
@@ -250,6 +252,7 @@ body {
 }
 
 .product {
+    font-size: 'montserrat';
     display: flex;
     align-items: center;
     padding: 25px;
@@ -336,6 +339,7 @@ body {
 }
 
 .info-txt h2 {
+    font-size: 'montserrat';
     text-align: center;
     font-size: 75px;
     color: #FFFFFF;
@@ -371,6 +375,7 @@ body {
 }
 
 .horario-info h2 {
+    font-size: 'montserrat';
     font-size: 75px;
     color: #FFFFFF;
     font-weight: 650;
