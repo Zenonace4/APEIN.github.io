@@ -4,58 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Keywords: Include relevant and specific keywords -->
-    <meta name="keywords" content="APEIN, apein, UNI, FIM, Ingeniería Naval, Estudiantes, Asociación, Universidad Nacional de Ingeniería">
-
-    <!-- Robots: Allow indexing but prevent caching -->
-    <meta name="robots" content="index, noarchive">
+    <title>APEIN</title>
+    <meta name="description" content="ASOCIACION DE ESTUDIANTES DE INGENIERIA NAVAL">
+    <meta name="keywords" content="APEIN,apein,uni,UNI,FIM,fim,naval">
+    <meta name="robots" content="noarchive">
 
     <!-- Primary Meta Tags -->
-      <title>APEIN</title>
+    <title>APEIN</title>
     <meta name="title" content="APEIN" />
-     <meta name="description" content="Bienvenidos a la Asociación de Estudiantes de Ingeniería Naval (APEIN) de la Universidad Nacional de Ingeniería. Descubre más sobre nuestros proyectos y eventos." />
+    <meta name="description" content="ASOCIACION DE ESTUDIANTES DE INGENIERIA NAVAL" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://zenonace4.github.io/APEIN.github.io/" />
-    <meta property="og:title" content="APEIN - Asociación de Estudiantes de Ingeniería Naval" />
-    <meta property="og:description" content="Bienvenidos a la Asociación de Estudiantes de Ingeniería Naval (APEIN) de la Universidad Nacional de Ingeniería. Descubre más sobre nuestros proyectos y eventos." />
+    <meta property="og:title" content="APEIN" />
+    <meta property="og:description" content="ASOCIACION DE ESTUDIANTES DE INGENIERIA NAVAL" />
     <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://zenonace4.github.io/APEIN.github.io/" />
-    <meta property="twitter:title" content="APEIN - Asociación de Estudiantes de Ingeniería Naval" />
-    <meta property="twitter:description" content="Bienvenidos a la Asociación de Estudiantes de Ingeniería Naval (APEIN) de la Universidad Nacional de Ingeniería. Descubre más sobre nuestros proyectos y eventos." />
+    <meta property="twitter:title" content="APEIN" />
+    <meta property="twitter:description" content="ASOCIACION DE ESTUDIANTES DE INGENIERIA NAVAL" />
     <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 
-    <!-- Stylesheets -->
+    <!-- Meta Tags Generated with https://metatags.io -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <header>
         <div class="menu container">
-            <img loading="lazy" class="logo-1" src="images/logo.png" alt="">
+            <img class="logo-1" src="images/logo.png" alt="">
             <input type="checkbox" id="menu" />
             <label for="menu">
-                <img loading="lazy" src="images/menu.png" class="menu-icono" alt="">
+                <img src="images/menu.png" class="menu-icono" alt="">
             </label>
             <nav class="navbar">
                 <div class="menu-1">
                     <ul>
-                       <li><a href="index.html">INICIO</a></li>
+                        <li><a href="index.html">INICIO</a></li>
                         <li><a href="index1.html">INFORMES</a></li>
                         <li><a href="index2.html">FORMULARIO</a></li>
                     </ul>
                 </div>
-                <img loading="lazy" class="logo-2" src="images/logo.png" alt="">
+                <img class="logo-2" src="images/logo.png" alt="">
                 <div class="menu-2">
                     <ul>
                         <li><a href="#">REDES</a></li>
@@ -63,17 +65,17 @@
                     <div class="socials">
                         <a href="https://www.facebook.com/apein.uni?locale=es_LA">
                             <div class="social">
-                                <img loading="lazy" src="images/s1.svg" alt="">
+                                <img src="images/s1.svg" alt="">
                             </div>
                         </a>
                         <a href="https://www.youtube.com/@apeinuni7330">
                             <div class="social">
-                                <img loading="lazy" src="images/s2.svg" alt="">
+                                <img src="images/s2.svg" alt="">
                             </div>
                         </a>
                         <a href="https://www.instagram.com/apein_uni/">
                             <div class="social">
-                                <img loading="lazy" src="images/s3.svg" alt="">
+                                <img src="images/s3.svg" alt="">
                             </div>
                         </a>
                     </div>
@@ -100,7 +102,7 @@
                             </div>
                         </div>
                         <div class="slider-img">
-                            <img loading="lazy" src="images/slider1.png" alt="">
+                            <img src="images/slider1.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -119,7 +121,7 @@
                             </div>
                         </div>
                         <div class="slider-img">
-                            <img loading="lazy" src="images/slider2.png" alt="">
+                            <img src="images/slider2.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -138,7 +140,7 @@
                             </div>
                         </div>
                         <div class="slider-img">
-                            <img loading="lazy" src="images/slider3.png" alt="">
+                            <img src="images/slider3.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -450,6 +452,22 @@
 
         </div>
     </footer>
+    <script>
+        const sections = document.querySelectorAll('.container');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
