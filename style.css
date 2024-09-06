@@ -617,6 +617,14 @@ body {
     .btn-1 {
         font-size: 16px;
     }
+     .video {
+        text-align: center;
+    }
+
+    .video-youtube .videos {
+        width: 330px;
+        height: 200px;
+    }
 
     .horario {
         padding: 30px;
