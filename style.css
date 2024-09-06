@@ -368,6 +368,26 @@ body {
 .btn-2:hover {
     background-color: #ab1c15;
 }
+.video {
+    padding: 50pX 0px;
+    background: linear-gradient(to right, #142157, #2898ee);
+    text-align: center;
+}
+
+.video-youtube h2 {
+    font-size: 'montserrat';
+    font-size: 50px;
+    color: #FFFFFF;
+    font-weight: 650;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+.videos {
+    border-radius: 10px;
+}
+
 
 .horario {
     padding: 100pX 0px;
