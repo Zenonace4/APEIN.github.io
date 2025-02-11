@@ -1093,10 +1093,11 @@ TECNOLOGIA
 
 .header-section {
     margin-top: 8vh;
-    height: 20vh;
+    height: 30vh;
     background-image: url(images/servicios/Escena1.jpg);
     justify-items: center;
     align-content: center;
+    background-size: contain;
 }
 
 .service {
