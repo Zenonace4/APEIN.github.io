@@ -1149,8 +1149,8 @@ TECNOLOGIA
     margin:1rem 0 1rem 0;
 }
 
-.item-description {
-    margin:1rem 0 1rem 0;
+.item-description p {
+    font-size: 20px;
 }
 
 .item-content .btn-1 {
