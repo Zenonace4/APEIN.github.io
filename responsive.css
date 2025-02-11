@@ -1,0 +1,1363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=PT+Serif:wght@400;700&display=swap');
+/*------------------------------------*\
+  ÍNDICE
+  1. Variables CSS (Root)
+  2. Estilos Base y Reset
+  3. Navegación Principal
+    3.1 Menú Principal
+    3.2 Menú Desplegable
+  4. Logos
+  5. Redes Sociales
+  6. Media Queries
+\*------------------------------------*/
+
+/*------------------------------------*\
+  1. Variables CSS (Root)
+  - Definición de colores del tema
+  - Variables globales
+\*------------------------------------*/
+:root {
+    /* Negro grisáceo oscuro */
+    --Jet: #333;
+    /* Negro puro */
+    --black: #000000;
+    /* Blanco suave - Fondos claros */
+    --white-wave: #F7F9FC;
+    /* Gris niebla - Bordes y separadores */
+    --gray-mist: #E1E8ED;
+    /* Rojo señal - Alertas y énfasis */
+    --red-signal: #DC3545;
+    /* Dorado - Acentos especiales */
+    --gold-accent: #FFD700;
+    /* Azul marino profundo - Color principal */
+    --navy-blue: #003B73;
+    /* Azul océano - Color secundario */
+    --ocean-blue: #0074D9;
+    /* Azul acero - Acentos */
+    --steel-blue: #4A90E2;
+    /* Azul marino oscuro - Fondos */
+    --deep-navy: #001F3F;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+/*------------------------------------*\
+  2. Estilos Base y Reset
+  - Reset general de elementos
+  - Configuración básica del body
+\*------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--gray-mist);
+    color: var(--Jet);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*------------------------------------*\
+  3. Navegación Principal
+  - Estructura del menú principal
+  - Estilos de enlaces y hover
+\*------------------------------------*/
+.lab-menu {
+    background: var(--Jet);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 10px 12px;
+    transition: color 0.4s ease;
+}
+
+.navbar ul li a:hover {
+    color: var(--black);
+}
+
+/* 3.2 Menú Desplegable */
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu-contenido {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--Jet);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    border-radius: 5px;
+}
+
+.menu:hover .menu-contenido {
+    display: block;
+}
+
+.menu-contenido a {
+    display: block;
+    padding: 10px;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.menu-contenido a:hover {
+    background: var(--gray-mist);
+}
+
+/*------------------------------------*\
+  4. Logos
+  - Estilos para los diferentes logos
+\*------------------------------------*/
+.lab-logo-1 {
+    width: 0;
+}
+
+.lab-logo-2 {
+    padding-right: 0;
+    margin: 14px 0;
+    margin-top: 0;
+    width: 15%;
+    height: 100%;
+}
+
+.apein-logo-3 {
+
+    align-items: center;
+    height: 100px;
+    width: 200px;
+
+}
+
+
+/*------------------------------------*\
+  5. Redes Sociales
+  - Iconos y contenedores de redes sociales
+\*------------------------------------*/
+.lab-menu-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.social {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.social img {
+    width: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.social:hover {
+    background: var(--black);
+}
+
+#lab-fim-menu {
+    display: none;
+}
+
+.lab-menu-icono {
+    display: none;
+}
+
+
+
+.swiper-button-prev::after {
+
+    font-size: 25px;
+}
+
+.swiper-button-next::after {
+    font-size: 25px;
+}
+
+div.swiper-button-next {
+    color: var(--black);
+
+}
+
+div.swiper-button-prev {
+    color: var(--black);
+}
+
+div.swiper-pagination-bullet {
+
+    background-color: var(--black);
+    opacity: 1;
+}
+
+span.swiper-pagination-bullet-active {
+    border: 1px solid var(--black);
+    background-color: #fff;
+}
+
+.swiper-wrapper .sw {
+
+    padding: 0px 40px;
+    padding-top: 0px;
+}
+
+.header-content {
+    background-image: url('images/modulos/hidraulico.jpg');
+}
+
+.titulo {
+    margin-top: 69px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.titulo h1 {
+    text-align: center;
+
+    color: var(--gray-mist);
+    font-size: 2.3rem;
+}
+
+.titulo h2 {
+    color: var(--gray-mist);
+
+}
+
+.ofrecemos {
+    background: var(--gray-mist);
+    padding-bottom: 40px;
+}
+
+.slider {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 70px 20px;
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    border: 4px solid #ffffff;
+    background: var(--white-wave);
+
+}
+
+.slider-txt {
+    height: 360px;
+    padding-top: 40px;
+    width: 60%;
+
+}
+
+.slider-txt h2 {
+    margin: 0 10px;
+    margin-bottom: 10px;
+    font-size: 'montserrat';
+    text-align: center;
+    font-size: 27pt;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.slider-txt p {
+    margin: 20px 30px;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    word-spacing: 0.004cap;
+    color: #000;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.botones {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 3px solid var(--black);
+    background-color: var(--Jet);
+    color: var(--white-wave);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+.btn-1:hover {
+    background-color: var(--black);
+}
+
+.slider-img {
+    width: 50%;
+
+}
+
+.slider-img img {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 25px;
+    text-align: center;
+
+
+}
+
+.red {
+    display: inline;
+    border-radius: 10px;
+    background: var(--gray-mist);
+    text-align: block;
+    margin-top: 10px;
+
+}
+
+.red .container {
+
+    max-width: 1200px;
+    padding: 0px 30px;
+    padding-bottom: 60px;
+
+}
+
+
+
+.red-red {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+
+}
+
+.fb-page {
+    flex: 1 1 100%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+
+}
+
+
+.face {
+    flex: 1 1 100%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    background-color: var(--white-wave);
+    border-left: 4px solid #ffffff;
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+    padding: 40px 20px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.youtube {
+
+    flex: 1 1 100%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    background-color: var(--white-wave);
+    border: 4px solid #ffffff;
+    padding: 40px 20px;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.red-wrapper .redes {
+    flex: 1 1 100%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 20px;
+}
+
+.red-wrapper .redesv {
+    flex: 1 1 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px;
+}
+
+
+.horario {
+    padding: 30px 40px;
+    background: var(--Jet);
+}
+
+.horario-info h2 {
+    font-size: 1.4rem;
+    color: var(--gray-mist);
+    font-weight: bolder;
+    letter-spacing: 0.8px;
+    word-spacing: 0.004cap;
+    margin-bottom: 5px;
+}
+
+.horario-txt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt {
+    color: var(--white-wave);
+}
+
+.txt h5 {
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    word-spacing: 0.004cap;
+    color: var(--white-wave);
+    font-weight: bolder;
+    padding: 8px 0;
+
+}
+
+.txt h6 {
+    font-size: 0.7rem;
+    letter-spacing: 0.8px;
+    word-spacing: 0.004cap;
+    color: var(--white-wave);
+
+    padding: 5px 0;
+
+}
+
+.txt p {
+    font-size: 0.8rem;
+    letter-spacing: 0.6px;
+    word-spacing: 0.004cap;
+    color: var(--white-wave);
+    font-weight: lighter;
+    margin-bottom: 4px;
+}
+
+
+
+.mapa {
+
+    background: var(--gray-mist);
+    text-align: block;
+    margin: 0px 0px;
+}
+
+.mapa-mapa {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+}
+
+.mapa-wrapper {
+    flex: 1 1 100%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid var(--white-wave);
+
+}
+
+.mapas {
+    width: 100%;
+    height: 420px;
+}
+
+
+
+
+
+
+
+.footert {
+
+    background: var(--Jet);
+
+}
+
+.footer {
+
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links h5 {
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    word-spacing: 0.004cap;
+    color: var(--gray-mist);
+    font-weight: bolder;
+    text-transform: uppercase;
+
+
+}
+
+.links h5 ul {
+
+    padding-top: 10px;
+
+
+}
+
+.links ul li a {
+    font-size: 0.6rem;
+    color: var(--white-wave);
+    font-weight: lighter;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    word-spacing: 0.004cap;
+    margin: 4px 0;
+    display: inline-block;
+}
+
+.footerinf {
+    color: var(--white-wave);
+    display: inline;
+    text-align: center;
+}
+
+.footerinf p {
+    padding: 2px 0;
+    font-size: 0.6rem;
+}
+
+
+
+/*------------------------------------*\
+  NOSOTROS
+\*------------------------------------*/
+
+.header-content-nosotros {
+    margin-top: 77px;
+    background-image: url('images/inicio/laboratorio.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 85.6rem;
+    height: 34rem;
+    padding-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 32.7rem;
+}
+
+
+.mision {
+    height: 460px;
+    background: var(--white-wave);
+}
+
+.mision-mision {
+    padding-top: 75px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.mision-mision-img {
+    width: 50%;
+    text-align: center;
+}
+
+.mision-mision-img img {
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.mision-mision-txt {
+    width: 50%;
+    text-align: center;
+}
+
+.mision-mision-txt h2 {
+
+    letter-spacing: 1px;
+    word-spacing: 0.004cap;
+    color: var(--black);
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.mision-mision-txt p {
+    margin: 20px 0px;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    word-spacing: 0.004cap;
+    color: #000;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+
+.vision {
+
+    height: 460px;
+    background: var(--gray-mist);
+}
+
+.vision-vision {
+    padding-top: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.vision-vision-img {
+    width: 50%;
+    text-align: center;
+}
+
+.vision-vision-img img {
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+
+}
+
+.vision-vision-txt {
+    width: 50%;
+    text-align: center;
+}
+
+.vision-vision-txt h2 {
+    letter-spacing: 1px;
+    word-spacing: 0.004cap;
+    color: var(--black);
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.vision-vision-txt p {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    word-spacing: 0.004cap;
+    color: #000;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+/*------------------------------------*\
+certificado
+\*------------------------------------*/
+
+.certificados {
+
+    background: var(--white-wave);
+}
+
+.certificado {
+    padding: 80px 0px;
+    text-align: center;
+
+}
+
+.certificado h2 {
+    padding-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 0.004cap;
+    color: var(--black);
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+.cert-img {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.certimg img {
+
+    display: flex;
+    padding: 0 0px;
+    width: 180px;
+    height: 120px;
+}
+
+.certimg {
+    margin: 0 10px;
+}
+
+/* ----- *\
+
+Contactos 
+
+\*------*/
+
+
+.contactos {
+    display: inline;
+    text-align: block;
+}
+
+.contacto-contacto .container {
+    max-width: 1200px;
+}
+
+
+
+.contacto-contacto {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+
+}
+
+.continf h2 {
+
+    font-size: 1.4rem;
+    color: var(--black);
+    font-weight: bolder;
+    letter-spacing: 0.8px;
+    word-spacing: 0.004cap;
+    margin-bottom: 5px;
+}
+
+.continf h5 {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    word-spacing: 0.004cap;
+    color: var(--black);
+    font-weight: bolder;
+    padding: 10px 0;
+    padding-top: 15px;
+}
+
+.continf p {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    word-spacing: 0.004cap;
+    color: var(--black);
+    font-weight: lighter;
+    padding-bottom: 6px;
+}
+
+.continf {
+
+    margin-top: 120px;
+    height: 840px;
+    flex: 1 1 100%;
+    max-width: 50%;
+    display: block;
+    align-items: center;
+    background-color: var(--white-wave);
+    border-left: 4px solid #ffffff;
+    border-top: 4px solid var(--white-wave);
+    border-bottom: 4px solid var(--white-wave);
+    padding: 40px 20px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.contform {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    height: 840px;
+    flex: 1 1 100%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    background-color: var(--white-wave);
+    border: 4px solid var(--white-wave);
+    padding: 40px 20px;
+    border-radius: 0px 30px 30px 0px;
+
+}
+
+.contac {
+    margin: 0 0;
+
+
+
+}
+
+.contac h2 {
+    font-size: 1.4rem;
+    color: var(--black);
+    font-weight: block;
+    letter-spacing: 0.8px;
+    word-spacing: 0.004cap;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+.mapcont {
+    margin-bottom: 50px;
+}
+
+.realmap {
+    border-radius: 30px 0px 0px 30px;
+
+}
+
+.creadomap {
+    border-radius: 0px 30px 30px 0px;
+}
+
+.contform .btn-1 {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 3px solid var(--black);
+    background-color: var(--red-signal);
+    color: var(--white-wave);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contform .btn-1:hover {
+    background-color: #ff0000;
+}
+
+/*------------------------------------*\
+TECNOLOGIA
+\*------------------------------------*/
+
+.products {
+
+    height: 460px;
+
+    margin: 0 auto;
+
+    background: var(--gray-mist);
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+    padding-top: 80px;
+}
+
+.tabs label {
+
+    height: 40px auto;
+    width: 33%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    order: 1;
+    display: block;
+    text-align: center;
+    font-size: 'montserrat';
+    text-align: center;
+    cursor: pointer;
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 1px;
+    word-spacing: 0.004cap;
+    text-transform: uppercase;
+    transition: background ease 0.2s;
+    border-bottom: 3px solid var(--black);
+
+}
+
+.tabs .tab {
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding-top: 2vw;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs input[type="radio"]:checked+label {
+
+    border-bottom: 3px solid var(--black);
+    color: var(--white-wave);
+    font-weight: bolder;
+    background-color: var(--Jet);
+
+
+}
+
+.tabs input[type="radio"]:checked+label+.tab {
+    display: block;
+}
+
+
+
+.product {
+    border: 3px solid var(--black);
+    color: var(--gray-mist);
+    font-weight: bolder;
+    background-color: var(--white-wave);
+    border-radius: 10px;
+    height: 200px;
+    font-size: 'montserrat';
+    display: flex;
+    text-align: center;
+}
+
+.product-img {
+    width: 50%;
+    text-align: center;
+
+}
+
+.product-img h4 {
+    display: block;
+    padding: 2px 0px;
+
+    line-height: 1.3;
+    letter-spacing: 1px;
+    word-spacing: 0.004cap;
+    color: var(--black);
+    font-weight: lighter;
+    font-size: 14px;
+
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.product-img img {
+
+    border-radius: 10px;
+    background: linear-gradient(to top, rgb(67, 134, 242, 0.4), rgba(255, 255, 255, 1));
+    margin: 30px 0;
+    width: 150px;
+    height: 120px;
+    text-align: center;
+    display: inline;
+
+}
+
+.product-txt {
+    width: 150px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.product-txt h4 {
+    text-align: center;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    word-spacing: 0.004cap;
+    margin-bottom: 10px;
+
+}
+
+.product-txt p {
+    text-align: center;
+    color: var(--black);
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    word-spacing: 0.004cap;
+
+}
+
+.product-txt span {
+    display: inline-block;
+    text-align: center;
+    color: var(--black);
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    word-spacing: 0.004cap;
+    width: 100%;
+    margin: 15px 0;
+}
+
+
+/*------------------------------------*\
+  6. Media Queries
+  - Estilos responsivos para móviles
+  \*------------------------------------*/
+
+@media (max-width: 768px) {
+    .lab-menu {
+        padding: 10px 15px;
+        background-color: var(--Jet);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .lab-logo-1 {
+        width: 140px;
+        height: auto;
+        margin-left: 2vw;
+    }
+
+    .lab-logo-2 {
+        display: none;
+    }
+
+    .lab-menu-icono {
+        width: 30px;
+        height: auto;
+        margin-right: 10px;
+        margin-top: 5px;
+        cursor: pointer;
+        display: block;
+    }
+
+    #lab-fim-menu {
+        display: none;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: var(--Jet);
+        transition: left 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    #lab-fim-menu:checked~.navbar {
+        left: 0;
+    }
+
+    .lab-menu-1,
+    .lab-menu-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .lab-menu-1 ul,
+    .lab-menu-2 ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .lab-menu-1 ul li a,
+    .lab-menu-2 ul li a {
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .socials {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu button {
+        font-size: 16px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu-contenido {
+        background-color: #444444;
+        width: 100%;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    .menu-contenido.active {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .menu.active .menu-contenido {
+        display: flex;
+    }
+
+    .menu-contenido a:hover {
+        background-color: #555555;
+    }
+
+    .menu.active {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lab-menu {
+        padding: 10px 15px;
+        background-color: var(--Jet);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .lab-logo-1 {
+        width: 140px;
+        height: auto;
+        margin-left: 2vw;
+    }
+
+    .lab-logo-2 {
+        display: none;
+    }
+
+    .lab-menu-icono {
+        width: 30px;
+        height: auto;
+        margin-right: 10px;
+        margin-top: 5px;
+        cursor: pointer;
+        display: block;
+    }
+
+    #lab-fim-menu {
+        display: none;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: var(--Jet);
+        transition: left 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    #lab-fim-menu:checked~.navbar {
+        left: 0;
+    }
+
+    .lab-menu-1,
+    .lab-menu-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .lab-menu-1 ul,
+    .lab-menu-2 ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .lab-menu-1 ul li a,
+    .lab-menu-2 ul li a {
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .socials {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu button {
+        font-size: 16px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu-contenido {
+        background-color: #444444;
+        width: 100%;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    .menu-contenido.active {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .menu.active .menu-contenido {
+        display: flex;
+    }
+
+    .menu-contenido a:hover {
+        background-color: #555555;
+    }
+
+    .menu.active {
+        margin-bottom: 80px;
+    }
+}
