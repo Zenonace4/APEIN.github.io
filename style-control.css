@@ -1094,7 +1094,7 @@ TECNOLOGIA
 .header-section {
     margin-top: 8vh;
     height: 20vh;
-    background-image: url("images/servicios/Escena1.jpg");
+    background-image: url(images/servicios/Escena1.jpg);
     justify-items: center;
     align-content: center;
 }
