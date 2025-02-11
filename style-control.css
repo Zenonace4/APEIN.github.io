@@ -1135,6 +1135,7 @@ TECNOLOGIA
     width: 100%;
     border: 4px solid #ffffff;
     border-radius: 16px;
+    height: 450px;
 }
 
 .item-content {
@@ -2133,6 +2134,10 @@ Contactos
     .item {
         border: 0.5rem solid #ffffff;
         border-radius: 1rem;
+    }
+
+    .item#item-4 {
+        margin-bottom: 0;
     }
         
     }
