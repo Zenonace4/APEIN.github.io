@@ -1034,67 +1034,191 @@ TECNOLOGIA
 \*------------------------------------*/
 
 /* -- Capacitacion -- */
-.header-slider {
-    height: 100vh;
-    padding-top: 8vh;
-    text-align: -webkit-center;
-}
-.header-slider .header-content .swiper{
-    width: 1800px;
-}
-
-.categories {
+.header-section-capacitacion {
     display: flex;
     justify-content: center;
-}
-.categorie {
-    margin: 1rem;
-}
-.categorie .btn-1 {
-    font-size: 20px;
-}
-
-.main-section {
-    height: 100vh;
-}
-
-.categorie-description {
-    text-align: center;
-    font-size: 20px;
-}
-
-.categorie-title {
-    margin: 0.5rem;
-}
-
-/* Texto botones de cursos */
-.header-slider .courses {
-    text-align: center;
-    padding: 1rem;
-    border-radius: 1rem;
-    background:var(--gray-mist);
-    border: 4px solid white;
-    margin: 1rem;
-
-}
-
-.section-name {
-    padding: 2rem;
+    height: 92vh;
+    width: 100%;
+    margin-top: 8vh;
+    background-image: url(images/servicios/Escena1.jpg);
+    background-size: cover;
+    background-position: center;
     justify-self: center;
 }
 
-.courses {
-    width: 1200px;
+.page-title {
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 2rem;
 }
 
-/*------------------------------------*\
- SERVICIOS
-\*------------------------------------*/
+.page-title h1 {
+    font-size: 3rem;
+    text-align: center;
+    background: var(--gray-mist);
+    border-radius: 2rem;
+    padding: 30px 55px;
+    border: 4px solid black;
+}
 
-.header-section {
+.page-offer {
+    width: 550px;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.swiper-container {
+    height: 100%;
+}
+
+.swiper-slide img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.page-offer .swiper-slide {
+    text-align: center;
+}
+
+/* Desplegable */
+.categories {
+    width: 100%;
+    justify-items: center;
+    background: var(--white-wave);
+}
+
+.categorie {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-1 {
+    flex: 1;
+    margin: 40px;
+    text-align: center;
+    padding-inline: 80px;
+}
+
+.column-2 {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+}
+
+.block {
+    margin-inline: auto;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+}
+
+.description p {
+    font-size: 20px;
+}
+
+/* Estilos para los bloques de imágenes y botones */
+.block-button {
+    background-size: cover;
+    background-position: center;
+    padding: 20px 60px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+.block-button:hover {
+    opacity: 0.8;
+}
+
+.block-button-text {
+    font-weight: bold;
+    background: #ffffff99;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* Estilos para las secciones desplegables */
+.section-dropdown {
+    background: var(--white-wave);
+    max-width: 1200px;
+    justify-self: center;
+}
+
+.section-details {
+    display: none;
+    flex-direction: column;
+}
+
+.details-block {
+    display: flex;
+    background: var(--gray-mist);
+    height: 600px;
+    padding: 40px 0;
+}
+
+.text-block {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+    width: 1200px;
+    align-content: center;
+}
+
+.text-title {
+    text-align: center;
+    margin: 2rem;
+}
+
+.text-description {
+    margin: 2rem;
+}
+
+.text-description h5 {
+    margin: 0.5rem;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.text-description p {
+    margin: 0.5rem;
+    font-size: 20px;
+}
+
+.image-block {
+    flex: 1;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilo para los botones de cada sección */
+.active {
+    display: flex;
+}
+
+/* -- Servicios -- */
+.header-section-servicios {
     margin-top: 8vh;
-    height: 30vh;
-    background-image: url(images/servicios/Escena1.jpg);
+    height: 20vh;
+    background-image: url(images/servicios/MT02.jpg);
     justify-items: center;
     align-content: center;
     background-size: contain;
@@ -1117,64 +1241,147 @@ TECNOLOGIA
 .row-section {
     display: flex;
     justify-content: center;
-    background-image: url(images/servicios/Escena1.jpg);
-    background-repeat: round;
+    flex-wrap: wrap;
+    margin: 50px 0;
 }
 
 .column-section {
     width: 600px;
     margin-left: 50px;
     margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap; /* Asegura que los items se alineen bien en pantallas pequeñas */
 }
 
 .item {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-size: cover;
     width: 100%;
+    max-width: 600px; /* Asegura que el tamaño máximo del bloque no sea mayor que 600px */
+    height: 400px;  /* Ajusta la altura del item */
     border: 4px solid #ffffff;
     border-radius: 16px;
-    height: 450px;
+    perspective: 1000px; /* Necesario para el efecto de rotación */
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    background: white;
 }
 
 .item-content {
-    padding: 4rem;
     width: 100%;
     height: 100%;
-    background: #ffffff80;
-    align-content: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    box-sizing: border-box;
+}
+
+/* Aseguramos que la rotación se activa al pasar el ratón */
+.item:hover .item-content {
+    transform: rotateY(180deg); /* Rotación al pasar el mouse */
+}
+
+/* Se asegura de que la parte posterior quede oculta inicialmente */
+.item-front, .item-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;  /* Esto evita que la parte trasera sea visible antes de la rotación */
+}
+
+/* Parte frontal (Imagen + Título) */
+.item-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2; /* Asegura que la parte frontal esté arriba al principio */
+    background-color: transparent; /* Hace que el fondo sea transparente */
 }
 
 .item-title {
-    margin:1rem 0 1rem 0;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);  /* Fondo con algo de transparencia */
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    height: 25%;
+    align-content: center;
 }
 
-.item-description p {
+.item-title h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+.item-image {
+    width: 100%;
+    height: 80%;  /* Ajusta la altura de la imagen */
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+/* Parte posterior (Descripción) */
+.item-back {
+    background-color: #f0f0f0;  /* Fondo del reverso */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    z-index: 1;  /* La parte trasera debe estar detrás de la parte frontal al principio */
+    transform: rotateY(180deg); /* Hace que la parte trasera se voltee por defecto */
+}
+
+.item-description {
+    font-size: 16px;
+    color: #333;
+}
+
+.item-description p{
     font-size: 20px;
-}
-
-.item-content .btn-1 {
-    margin:1rem 0 1rem 0;
+    text-align: justify;
     color: white;
 }
 
-/* Servicio Imagenes */
-.item#item-1 {
-    background-image: url(images/modulos/neumatico.jpg);
+/* Descripción normal (anterior) */
+.item-description, .item-description-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden; /* Ocultar la parte trasera */
+    padding: 20px;
+    background-color: var(--Jet);
+    align-content: center;
+    padding: 2rem;
+    border-radius: 12px;
 }
 
-.item#item-2 {
-    background-image: url(images/modulos/neumatico.jpg);
+/* Descripción alternativa que aparece al girar */
+.item-description-hover {
+    transform: rotateY(180deg); /* Colocar el contenido alternativo en la parte trasera */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    text-align: center;
 }
 
-.item#item-3 {
-    background-image: url(images/modulos/neumatico.jpg);
+.item-content .item-description-hover {
+    display: none;
 }
 
-.item#item-4 {
-    background-image: url(images/modulos/neumatico.jpg);
+.item:hover .item-description-hover {
+    display: block;
 }
+
+/* -- -- */
 
 /*------------------------------------*\
  CHAT BOT
