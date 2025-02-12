@@ -92,9 +92,32 @@ var swiper = new Swiper(".mySwiper-2", {
 
 });
 
+var swiper = new Swiper(".mySwiper-3", {
+    direction: "vertical", // Cambiado a vertical
+    loop: true,
+    autoplay: {
+        delay: 7000, // 7 segundos de intervalo
+    },
+    slidesPerView: 1, // Solo muestra una imagen a la vez
+    spaceBetween: 0, // Sin espacio entre las slides
+    pagination: {
+        el: ".swiper-pagination",
+        type: "bullets", // Paginación en forma de puntos
+        clickable: true,
+    },
+});
 
+function toggleSection(sectionId) {
+    // Ocultar todas las secciones
+    const sections = document.querySelectorAll('.section-details');
+    sections.forEach(function(section) {
+        section.classList.remove('active');
+    });
 
-
+    // Mostrar la sección seleccionada
+    const section = document.getElementById(sectionId);
+    section.classList.add('active');
+}
 
 
 
