@@ -1157,7 +1157,7 @@ TECNOLOGIA
 
 /* Estilos para las secciones desplegables */
 .section-dropdown {
-    background: var(--white-wave);
+    background: var(--gray-mist);
     max-width: 1200px;
     justify-self: center;
 }
@@ -1172,6 +1172,9 @@ TECNOLOGIA
     background: var(--gray-mist);
     height: 600px;
     padding: 40px 0;
+    margin: 2rem;
+    border: 4px solid white;
+    border-radius: 2rem;
 }
 
 .text-block {
