@@ -2291,65 +2291,82 @@ Contactos
     }
 
     /* -- Capacitacion -- */
-    .headcapacitacion {
-        background: none;
-    }
-    
-    .header-slider .header-content .swiper {
-        width: 100%;
-    }
-    
-    .courses {
-        width: 100%;
+    .header-section-capacitacion {
+        flex-direction: column;
     }
     
     .categorie {
-        display: none;
-    }
-    
-    .header-slider {
-        height: unset;
-    }
-    
-    .section-name {
         width: 100%;
-        padding: 2rem;
     }
     
-    .course-name {
+    .page-title {
+        width: 100%;
+        margin: 0;
+        padding: 1.5rem;
+    }
+    
+    .page-title h1 {
+        font-size: 1.4rem;
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+    }
+    
+    .page-offer {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .column-1 {
+        margin: 1rem;
+        padding-inline: 2rem;
+    }
+    
+    .column-2 {
+        flex-direction: column;
+    }
+    
+    .block {
+        width: 100%;
+    }
+    
+    .block-button {
+        width: 80%;
+    }
+    
+    .section-dropdown {
+        width: 100%;
+    }
+    
+    .text-block {
+        width: 100%;
+    }
+    
+    .details-block {
+        flex-direction: column;
+        margin: 1rem;
+        padding: 1rem 0;
+        height: 115vh;
+    }
+    
+    .text-title {
         margin: 1rem;
     }
     
-    .header-slider .courses {
-        margin: 2rem;
-        padding: 1.5rem;
-        width: -webkit-fill-available;
+    .text-description {
+        margin: 1rem;
     }
     
-    .categorie-title h2 {
-        font-size: 1.4rem;
+    .text-description h5 {
+        font-size: 1.2rem;
     }
     
-    /* -- Servicios -- */
-    .row-section {
-        display: block;
+    .text-description p {
+        font-size: 1rem;
     }
     
-    .column-section {
-        width: 90%;
-        margin: 0;
-        justify-self: center;
-    }
-    
-    .item {
-        border: 0.5rem solid #ffffff;
-        border-radius: 1rem;
-    }
-
-    .item#item-4 {
-        margin-bottom: 0;
-    }
-        
+    .image-block {
+        max-width: 90%;
+        margin: 0 5%;
     }
 
 }
