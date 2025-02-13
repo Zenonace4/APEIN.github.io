@@ -1077,6 +1077,7 @@ TECNOLOGIA
 .page-offer .swiper-slide img {
     height: 100%;
     object-fit: contain;
+    width: -webkit-fill-available;
 }
 
 .page-offer .swiper-slide {
