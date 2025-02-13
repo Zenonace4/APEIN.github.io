@@ -92,19 +92,33 @@ var swiper = new Swiper(".mySwiper-2", {
 
 });
 
-var swiper = new Swiper(".mySwiper-3", {
-    direction: "vertical", // Cambiado a vertical
-    loop: true,
-    autoplay: {
-        delay: 7000, // 7 segundos de intervalo
-    },
-    slidesPerView: 1, // Solo muestra una imagen a la vez
-    spaceBetween: 0, // Sin espacio entre las slides
-    pagination: {
-        el: ".swiper-pagination",
-        type: "bullets", // Paginación en forma de puntos
-        clickable: true,
-    },
+// Función para inicializar Swiper con la dirección correcta
+function initSwiper() {
+    var swiper = new Swiper(".mySwiper-3", {
+        direction: window.innerWidth <= 768 ? "horizontal" : "vertical", // Cambiar la dirección según el tamaño de la pantalla
+        loop: true,
+        autoplay: {
+            delay: 7000, // 7 segundos de intervalo
+        },
+        slidesPerView: 1, // Solo muestra una imagen a la vez
+        spaceBetween: 0, // Sin espacio entre las slides
+        pagination: {
+            el: ".swiper-pagination",
+            type: "bullets", // Paginación en forma de puntos
+            clickable: true,
+        },
+    });
+
+    return swiper;
+}
+
+// Inicializa el Swiper al cargar la página
+var swiper = initSwiper();
+
+// Actualiza la configuración del Swiper al cambiar el tamaño de la ventana
+window.addEventListener('resize', function () {
+    swiper.destroy(true, true); // Destruye el Swiper actual
+    swiper = initSwiper(); // Reinicializa el Swiper con la nueva configuración
 });
 
 function toggleSection(sectionId) {
