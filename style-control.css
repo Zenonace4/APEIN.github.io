@@ -1088,7 +1088,7 @@ TECNOLOGIA
 .categories {
     width: 100%;
     justify-items: center;
-    background: var(--white-wave);
+    background: var(--gray-mist);
 }
 
 .categorie {
