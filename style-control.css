@@ -30,7 +30,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--gray-mist);
+    background-color: var(--white-wave);
     color: var(--Jet);
 }
 
@@ -1158,7 +1158,7 @@ TECNOLOGIA
 
 /* Estilos para las secciones desplegables */
 .section-dropdown {
-    background: var(--gray-mist);
+    background: var(--white-wave);
     max-width: 1200px;
     justify-self: center;
 }
