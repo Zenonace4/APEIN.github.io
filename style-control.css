@@ -2292,81 +2292,108 @@ Contactos
 
     /* -- Capacitacion -- */
     .header-section-capacitacion {
-        flex-direction: column;
-    }
-    
-    .categorie {
-        width: 100%;
-    }
-    
-    .page-title {
-        width: 100%;
-        margin: 0;
-        padding: 1.5rem;
-    }
-    
-    .page-title h1 {
-        font-size: 1.4rem;
-        padding: .5rem 1rem;
-        border-radius: 1rem;
-    }
-    
-    .page-offer {
-        width: 100%;
-        margin: 0;
-    }
-    
-    .column-1 {
-        margin: 1rem;
-        padding-inline: 2rem;
-    }
-    
-    .column-2 {
-        flex-direction: column;
-    }
-    
-    .block {
-        width: 100%;
-    }
-    
-    .block-button {
-        width: 80%;
-    }
-    
-    .section-dropdown {
-        width: 100%;
-    }
-    
-    .text-block {
-        width: 100%;
-    }
-    
-    .details-block {
-        flex-direction: column;
-        margin: 1rem;
-        padding: 1rem 0;
-        height: 115vh;
-    }
-    
-    .text-title {
-        margin: 1rem;
-    }
-    
-    .text-description {
-        margin: 1rem;
-    }
-    
-    .text-description h5 {
-        font-size: 1.2rem;
-    }
-    
-    .text-description p {
-        font-size: 1rem;
-    }
-    
-    .image-block {
-        max-width: 90%;
-        margin: 0 5%;
-    }
+    flex-direction: column;
+}
+
+.categorie {
+    width: 100%;
+}
+
+.page-title {
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+.page-title h1 {
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+}
+
+.page-offer {
+    width: 90%;
+    margin: 1rem;
+    place-self: center;
+}
+
+.swiper-slide img {
+    width: -webkit-fill-available;
+}
+
+.column-1 {
+    margin: 1rem;
+    padding-inline: 2rem;
+}
+
+.column-2 {
+    flex-direction: column;
+}
+
+.block {
+    width: 100%;
+}
+
+.block-button {
+    width: 80%;
+}
+
+.section-dropdown {
+    width: 100%;
+}
+
+.text-block {
+    width: 100%;
+}
+
+.details-block {
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem 0;
+    height: 90vh;
+    border-radius: 0;
+
+}
+
+.text-title {
+    margin: 1rem;
+}
+
+.text-description {
+    margin: 1rem;
+}
+
+.text-description h5 {
+    font-size: 1.2rem;
+}
+
+.text-description p {
+    font-size: 1rem;
+}
+
+.image-block {
+    max-width: 90%;
+    margin: 0 5%;
+}
+
+/* -- Servicios -- */
+
+.row-section {
+    margin: 25px 0;
+}
+
+.item {
+    height: 50vh;
+    margin: 25px 0;
+}
+
+.item-title {
+    padding: 0;
+}
+
+.column-section {
+    width: 100%;
+    margin: 0 1rem;
+}
 
 }
