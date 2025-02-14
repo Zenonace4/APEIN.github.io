@@ -133,5 +133,22 @@ function toggleSection(sectionId) {
     section.classList.add('active');
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const smallImage = document.querySelector(".curso .imagen");
+    const previewImage = document.querySelector(".preview");
+
+    // Mostrar la imagen al hacer clic en la imagen pequeña
+    smallImage.addEventListener("click", function () {
+        previewImage.style.display = "block";
+    });
+
+    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
+    document.addEventListener("click", function (event) {
+        if (event.target !== smallImage && event.target !== previewImage) {
+            previewImage.style.display = "none";
+        }
+    });
+});
+
 
 
