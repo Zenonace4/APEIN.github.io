@@ -1216,6 +1216,10 @@ div.column-section.tecnologia {
     flex-direction: column;
 }
 
+button.block-button.tecnologia {
+    width: 300px;
+    height: 110px;
+}
 
 div#item-1.item.tecnologia {
     border: 4px solid var(--black);
@@ -1277,19 +1281,25 @@ div#item-6.item.tecnologia h4 {
 
 div#item-7.item.tecnologia {
     border: 4px solid var(--black);
-    margin: 0PX AUTO;
-    margin-top: 20px;
-    margin-bottom: 60px;
+    margin: 60px 10px 60px 15px;
 }
 
 div#item-7.item.tecnologia h4 {
     color: var(--white-wave);
 }
 
+div#item-8.item.tecnologia {
+    border: 4px solid var(--black);
+    margin: 40px 80px;
+}
+
+div#item-8.item.tecnologia h4 {
+    color: var(--white-wave);
+}
 
 div#item-9.item.tecnologia {
     border: 4px solid var(--black);
-    margin: 60px 15px 20px 10px;
+    margin: 40px 80px;
 }
 
 div#item-9.item.tecnologia h4 {
@@ -1323,6 +1333,44 @@ div#item-12.item.tecnologia h4 {
     color: var(--white-wave);
 }
 
+div#item-13.item.tecnologia {
+    border: 4px solid var(--black);
+    margin: 60px 10px 60px 15px;
+}
+
+div#item-13.item.tecnologia h4 {
+    color: var(--white-wave);
+}
+
+div#item-14.item.tecnologia {
+    border: 4px solid var(--black);
+    margin: 60px 10px 60px 15px;
+}
+
+div#item-14.item.tecnologia h4 {
+    color: var(--white-wave);
+}
+
+div#item-15.item.tecnologia {
+    border: 4px solid var(--black);
+    margin: 60px 10px 60px 15px;
+}
+
+div#item-15.item.tecnologia h4 {
+    color: var(--white-wave);
+}
+
+div#item-16.item.tecnologia {
+    padding: 0 auto;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    border: 4px solid var(--black);
+}
+
+div#item-16.item.tecnologia h4 {
+    color: var(--white-wave);
+}
 
 
 
@@ -2751,7 +2799,9 @@ TECNOLOGIA
     div#item-1.item.tecnologia {
         width: 340px;
         border: 4px solid var(--black);
-        padding: 40px auto;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     div#item-1.item.tecnologia h4 {
@@ -2762,7 +2812,9 @@ TECNOLOGIA
     div#item-2.item.tecnologia {
         width: 340px;
         border: 4px solid var(--black);
-        padding: 40px auto;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     div#item-2.item.tecnologia h4 {
@@ -2772,7 +2824,9 @@ TECNOLOGIA
     div#item-3.item.tecnologia {
         width: 340px;
         border: 4px solid var(--black);
-        padding: 40px auto;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     div#item-3.item.tecnologia h4 {
@@ -2782,7 +2836,9 @@ TECNOLOGIA
     div#item-4.item.tecnologia {
         width: 340px;
         border: 4px solid var(--black);
-        padding: 0px auto;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     div#item-4.item.tecnologia h4 {
@@ -2792,7 +2848,9 @@ TECNOLOGIA
     div#item-5.item.tecnologia {
         width: 340px;
         border: 4px solid var(--black);
-        padding: 40px auto;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     div#item-5.item.tecnologia h4 {
@@ -2802,7 +2860,9 @@ TECNOLOGIA
     div#item-6.item.tecnologia {
         width: 340px;
         border: 4px solid var(--black);
-        padding: 40px auto;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     div#item-6.item.tecnologia h4 {
@@ -2812,10 +2872,24 @@ TECNOLOGIA
     div#item-7.item.tecnologia {
         width: 340px;
         border: 4px solid var(--black);
-        padding: 40px auto;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     div#item-7.item.tecnologia h4 {
+        color: var(--white-wave);
+    }
+
+    div#item-8.item.tecnologia {
+        width: 340px;
+        border: 4px solid var(--black);
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    div#item-8.item.tecnologia h4 {
         color: var(--white-wave);
     }
 
@@ -2823,7 +2897,9 @@ TECNOLOGIA
     div#item-9.item.tecnologia {
         width: 340px;
         border: 4px solid var(--black);
-        padding: 40px auto;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     div#item-9.item.tecnologia h4 {
@@ -2833,7 +2909,9 @@ TECNOLOGIA
     div#item-10.item.tecnologia {
         width: 340px;
         border: 4px solid var(--black);
-        padding: 40px auto;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     div#item-10.item.tecnologia h4 {
@@ -2843,7 +2921,9 @@ TECNOLOGIA
     div#item-11.item.tecnologia {
         width: 340px;
         border: 4px solid var(--black);
-        padding: 40px auto;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     div#item-11.item.tecnologia h4 {
@@ -2853,13 +2933,62 @@ TECNOLOGIA
     div#item-12.item.tecnologia {
         width: 340px;
         border: 4px solid var(--black);
-        padding: 40px auto;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     div#item-12.item.tecnologia h4 {
         color: var(--white-wave);
     }
 
+    div#item-13.item.tecnologia {
+        width: 340px;
+        border: 4px solid var(--black);
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    div#item-13.item.tecnologia h4 {
+        color: var(--white-wave);
+    }
+
+    div#item-14.item.tecnologia {
+        width: 340px;
+        border: 4px solid var(--black);
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    div#item-14.item.tecnologia h4 {
+        color: var(--white-wave);
+    }
+
+    div#item-15.item.tecnologia {
+        width: 340px;
+        border: 4px solid var(--black);
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    div#item-15.item.tecnologia h4 {
+        color: var(--white-wave);
+    }
+
+    div#item-16.item.tecnologia {
+        width: 340px;
+        border: 4px solid var(--black);
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    div#item-16.item.tecnologia h4 {
+        color: var(--white-wave);
+    }
     /*------------------------------------*\
 Contactos
 \*------------------------------------*/
