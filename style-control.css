@@ -1521,7 +1521,7 @@ div#item-12.item.tecnologia h4 {
 
 /* -- Servicios -- */
 .header-section-servicios {
-    margin-top: 8vh;
+    margin-top: 10vh;
     height: 20vh;
     background-image: url('images/inicio/lab-automatizacion-1.jfif');
     justify-items: center;
