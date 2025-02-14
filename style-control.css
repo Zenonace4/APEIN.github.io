@@ -597,15 +597,14 @@ span.swiper-pagination-bullet-active {
 }
 
 /* 14.Horario*/
-
 .horario {
     padding: 30px 40px;
-    background: var(--Jet);
+    background: var(--gray-mist);
 }
 
 .horario-info h2 {
     font-size: 1.4rem;
-    color: var(--gray-mist);
+    color: var(--black);
     font-weight: bolder;
     letter-spacing: 0.8px;
     word-spacing: 0.004cap;
@@ -618,14 +617,14 @@ span.swiper-pagination-bullet-active {
 }
 
 .txt {
-       color: var(--black);
+    color: var(--black);
 }
 
 .txt h5 {
     font-size: 1rem;
     letter-spacing: 0.8px;
     word-spacing: 0.004cap;
-    color: var(--white-wave);
+    color: var(--black);
     font-weight: bolder;
     padding: 8px 0;
 
@@ -635,7 +634,7 @@ span.swiper-pagination-bullet-active {
     font-size: 0.7rem;
     letter-spacing: 0.8px;
     word-spacing: 0.004cap;
-    color: var(--white-wave);
+    color: var(--black);
 
     padding: 5px 0;
 
@@ -645,11 +644,10 @@ span.swiper-pagination-bullet-active {
     font-size: 0.8rem;
     letter-spacing: 0.6px;
     word-spacing: 0.004cap;
-    color: var(--white-wave);
+    color: var(--black);
     font-weight: lighter;
     margin-bottom: 4px;
 }
-
 /* 15. Mapa*/
 
 .mapa {
