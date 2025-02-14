@@ -1526,7 +1526,7 @@ div#item-12.item.tecnologia h4 {
     background-image: url('images/inicio/lab-automatizacion-1.jfif');
     justify-items: center;
     align-content: center;
-    background-size: contain;
+    background-position-y: center;
 }
 
 .service {
@@ -3045,6 +3045,9 @@ Contactos
     }
     
     /* -- Servicios -- */
+    .header-section-servicios {
+        background-size: cover;
+    }
     
     .row-section {
         margin: 25px 0;
