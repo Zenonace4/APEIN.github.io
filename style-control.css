@@ -1532,15 +1532,13 @@ div#item-12.item.tecnologia h4 {
 .service {
     text-align: center;
     align-content: center;
-    background: #00000080;
-    width: 50%;
-    height: 30%;
+    background: #ffffff80;
     border-radius: 1rem;
-    border:2px solid #00000080;
+    padding: 1rem 3rem;
 }
 
 .service-text h1 {
-    color: white;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255),             1px -1px 0 rgb(255, 255, 255),            -1px  1px 0 rgb(255, 255, 255),             1px  1px 0 rgb(255, 255, 255);
 }
 
 .row-section {
