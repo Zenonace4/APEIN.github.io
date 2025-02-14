@@ -1327,22 +1327,22 @@ div#item-12.item.tecnologia h4 {
     justify-content: center;
     align-items: center;
     color: white;
-    margin: 2rem;
+    margin: 50px;
 }
 
 .page-title h1 {
     font-size: 2.5rem;
     text-align: center;
-    background: var(--gray-mist);
+    background: #00000073;
     border-radius: 2rem;
     padding: 30px 55px;
-    border: 4px solid black;
+    color: white;
 }
 
 .page-offer {
     width: 550px;
     overflow: hidden;
-    margin: 2rem;
+    margin: 50px;
 }
 
 .swiper-container {
@@ -1402,6 +1402,8 @@ div#item-12.item.tecnologia h4 {
 
 .description p {
     font-size: 20px;
+    text-align: justify;
+    margin: 1rem;
 }
 
 /* Estilos para los bloques de imágenes y botones */
@@ -1447,7 +1449,7 @@ div#item-12.item.tecnologia h4 {
     display: flex;
     background: var(--gray-mist);
     height: 600px;
-    padding: 40px 0;
+    padding: 2rem;
     margin: 2rem;
     border: 4px solid white;
     border-radius: 2rem;
@@ -1521,11 +1523,11 @@ div#item-12.item.tecnologia h4 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 50px 0;
+    background-image: url(images/servicios/Escena1.jpg);
 }
 
 .column-section {
-    width: 600px;
+    width: 550px;
     margin-left: 50px;
     margin-right: 50px;
     display: flex;
@@ -1538,13 +1540,12 @@ div#item-12.item.tecnologia h4 {
     width: 100%;
     max-width: 600px; /* Asegura que el tamaño máximo del bloque no sea mayor que 600px */
     height: 400px;  /* Ajusta la altura del item */
-    border: 4px solid #ffffff;
+    border: 4px solid black;
     border-radius: 16px;
     perspective: 1000px; /* Necesario para el efecto de rotación */
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
-    background: white;
 }
 
 .item-content {
@@ -1580,16 +1581,16 @@ div#item-12.item.tecnologia h4 {
 
 .item-title {
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.8);  /* Fondo con algo de transparencia */
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    background: var(--Jet);  /* Fondo con algo de transparencia */
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     height: 25%;
     align-content: center;
 }
 
 .item-title h4 {
     font-size: 18px;
-    color: #333;
+    color: white;
     margin: 0;
     text-align: center;
 }
@@ -2790,7 +2791,7 @@ Contactos
     }
 
     /* -- Capacitacion -- */
-    .header-section-capacitacion {
+.header-section-capacitacion {
     flex-direction: column;
 }
 
