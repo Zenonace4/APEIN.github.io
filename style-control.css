@@ -255,7 +255,10 @@ span.swiper-pagination-bullet-active {
 
 
 .header-content {
-    background-image: url('images/modulos/hidraulico.jpg');
+    background-image: url('images/inicio/lab-automatizacion-1.jfif');
+    background-size: 100%;
+    background-position:0cap ;
+    
 }
 
 .titulo {
@@ -263,12 +266,20 @@ span.swiper-pagination-bullet-active {
     padding: 30px 0;
 }
 
+
 .titulo h1 {
     text-align: center;
-    color: var(--gray-mist);
+    color: var(--black);
+  
+        text-shadow: 
+          -1px -1px 0 rgb(255, 255, 255),  
+           1px -1px 0 rgb(255, 255, 255),  
+          -1px  1px 0 rgb(255, 255, 255),  
+           1px  1px 0 rgb(255, 255, 255);  
+
+      
     font-size: 2.3rem;
 }
-
 .titulo h2 {
     color: var(--gray-mist);
 }
