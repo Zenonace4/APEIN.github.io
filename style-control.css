@@ -1216,8 +1216,9 @@ div#item-7.item.tecnologia {
 }
 
 div#item-8.item.tecnologia,
-div#item-9.item.tecnologia {
-    margin: 40px 80px;
+div#item-9.item.tecnologia,
+div#item-17.item.tecnologia {
+    margin: 60px 10px 60px 15px;
 }
 
 div#item-10.item.tecnologia {
