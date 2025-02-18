@@ -2885,7 +2885,7 @@ Contactos
 
     .column-1 {
         margin: 1rem;
-        padding-inline: 2rem;
+        padding: 0;
     }
 
     .column-2 {
