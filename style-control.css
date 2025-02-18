@@ -1467,7 +1467,7 @@ div#item-16.item.tecnologia {
     justify-content: center;
     flex-wrap: wrap;
     background-image: url(images/servicios/lab-automatizacion-1.jpg);
-    background-repeat: round;
+    background-size: cover;
 }
 
 .column-section {
