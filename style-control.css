@@ -1,5 +1,4 @@
 /* CSS Organized Structure */
-
 /* 1. Google Font Imports */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=PT+Serif:wght@400;700&display=swap');
@@ -255,10 +254,10 @@ span.swiper-pagination-bullet-active {
 
 
 .header-content {
-    background-image: url('images/inicio/lab-automatizacion-1.jpg');
+    background-image: url('images/inicio/lab-automatizacion-1.jfif');
     background-size: 100%;
-    background-position:0cap ;
-    
+    background-position: 0cap;
+
 }
 
 .titulo {
@@ -270,16 +269,14 @@ span.swiper-pagination-bullet-active {
 .titulo h1 {
     text-align: center;
     color: var(--black);
-  
-        text-shadow: 
-          -1px -1px 0 rgb(255, 255, 255),  
-           1px -1px 0 rgb(255, 255, 255),  
-          -1px  1px 0 rgb(255, 255, 255),  
-           1px  1px 0 rgb(255, 255, 255);  
-
-      
+    text-shadow:
+        -1px -1px 0 rgb(255, 255, 255),
+        1px -1px 0 rgb(255, 255, 255),
+        -1px 1px 0 rgb(255, 255, 255),
+        1px 1px 0 rgb(255, 255, 255);
     font-size: 2.3rem;
 }
+
 .titulo h2 {
     color: var(--gray-mist);
 }
@@ -291,7 +288,6 @@ span.swiper-pagination-bullet-active {
     padding-bottom: 40px;
     background: var(--gray-mist);
 }
-
 
 .slider {
     margin: 60px 0;
@@ -376,21 +372,17 @@ span.swiper-pagination-bullet-active {
 /* Imagen grande de previsualización */
 .preview {
     display: none;
-    /* Oculta la imagen por defecto */
     position: fixed;
-    /* Flota sobre toda la pantalla */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 700px;
-    /* Ajusta el tamaño */
     max-width: 90vw;
     max-height: 90vh;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     border: 3px solid #ddd;
     background: white;
     z-index: 9999;
-    /* Aparece por encima de todo */
     padding: 10px;
     border-radius: 10px;
 }
@@ -432,7 +424,7 @@ span.swiper-pagination-bullet-active {
     background-color: var(--black);
 }
 
-/* 12... laboratorio de automatizacion y control*/
+/* 12 laboratorio de automatizacion y control*/
 
 .autom {
     height: 460px;
@@ -443,8 +435,6 @@ span.swiper-pagination-bullet-active {
     padding-top: 75px;
     display: flex;
     align-items: center;
-
-
 }
 
 .autom-autom-img {
@@ -495,8 +485,6 @@ span.swiper-pagination-bullet-active {
     padding-top: 75px;
     display: flex;
     align-items: center;
-
-
 }
 
 .contr-contr-img {
@@ -517,7 +505,6 @@ span.swiper-pagination-bullet-active {
 }
 
 .contr-contr-txt h2 {
-
     letter-spacing: 1px;
     word-spacing: 0.004cap;
     color: var(--black);
@@ -572,7 +559,6 @@ span.swiper-pagination-bullet-active {
 .red-wrapper .fb-page iframe {
     width: 260px;
     height: 360px;
-    /* Ajusta la altura según lo que necesites */
     margin-bottom: 20px;
     border: 4px solid var(--gray-mist);
 }
@@ -659,8 +645,8 @@ span.swiper-pagination-bullet-active {
     font-weight: lighter;
     margin-bottom: 4px;
 }
-/* 15. Mapa*/
 
+/* 15. Mapa*/
 .mapa {
     padding-bottom: 40px;
     background: var(--gray-mist);
@@ -694,15 +680,10 @@ span.swiper-pagination-bullet-active {
 
 /* 16. footer*/
 .footert {
-
-
     background: var(--Jet);
-
-
 }
 
 .footer {
-
     padding-top: 1rem;
     padding-bottom: 1.5rem;
     display: flex;
@@ -727,15 +708,10 @@ span.swiper-pagination-bullet-active {
     color: var(--gray-mist);
     font-weight: bolder;
     text-transform: uppercase;
-
-
 }
 
 .links h5 ul {
-
     padding-top: 10px;
-
-
 }
 
 .links ul li a {
@@ -761,11 +737,22 @@ span.swiper-pagination-bullet-active {
 }
 
 
+/* ---------------------------------------------
+Table of Contents:
+1. About Us (Nosotros) Section
+   1.1 Header
+   1.2 Mission Section
+   1.3 Vision Section
+2. Events (Eventos) Section
+   2.1 Certificates Section
+---------------------------------------------- */
 
+/* 1. About Us (Nosotros) Section */
 /*------------------------------------*\
-  NOSOTROS
+    NOSOTROS
 \*------------------------------------*/
 
+/* 1.1 Header */
 .header-content-nosotros {
     margin-top: 77px;
     background-image: url('images/inicio/laboratorio.jpg');
@@ -780,7 +767,7 @@ span.swiper-pagination-bullet-active {
     max-height: 32.7rem;
 }
 
-
+/* 1.2 Mission Section */
 .mision {
     height: 460px;
     background: var(--white-wave);
@@ -790,8 +777,6 @@ span.swiper-pagination-bullet-active {
     padding-top: 75px;
     display: flex;
     align-items: center;
-
-
 }
 
 .mision-mision-img {
@@ -812,7 +797,6 @@ span.swiper-pagination-bullet-active {
 }
 
 .mision-mision-txt h2 {
-
     letter-spacing: 1px;
     word-spacing: 0.004cap;
     color: var(--black);
@@ -832,9 +816,8 @@ span.swiper-pagination-bullet-active {
     font-weight: lighter;
 }
 
-
+/* 1.3 Vision Section */
 .vision {
-
     height: 460px;
     background: var(--gray-mist);
 }
@@ -854,7 +837,6 @@ span.swiper-pagination-bullet-active {
     width: 500px;
     height: 300px;
     border-radius: 30px;
-
 }
 
 .vision-vision-txt {
@@ -882,19 +864,19 @@ span.swiper-pagination-bullet-active {
     font-weight: lighter;
 }
 
+/* 2. Events (Eventos) Section */
 /*------------------------------------*\
-EVENTOS
+    EVENTOS
 \*------------------------------------*/
 
+/* 2.1 Certificates Section */
 .certificados {
-
     background: var(--white-wave);
 }
 
 .certificado {
     padding: 80px 0px;
     text-align: center;
-
 }
 
 .certificado h2 {
@@ -908,60 +890,65 @@ EVENTOS
     margin-bottom: 1rem;
 }
 
-
 .cert-img {
     display: flex;
     justify-content: space-between;
-
 }
-.certimg img {
 
+.certimg img {
     display: flex;
     padding: 0 0px;
     width: 180px;
     height: 120px;
-
 }
 
 .certimg {
-
     border: 4px solid var(--gray-mist);
     margin: 0 10px;
 }
 
-/* ----- *\
-
-Contactos 
-
-\*------*/
+/* ----- Contact Section ----- */
 .contactos {
-
     background: var(--gray-mist);
 }
 
 .contacto {
     display: inline;
     text-align: block;
-
-}
-
-
-.contacto-contacto .container {
-    max-width: 1200px;
 }
 
 .contacto-contacto {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0px;
     background: var(--gray-mist);
+}
 
+.contacto-contacto .container {
+    max-width: 1200px;
+}
+
+/* Contact Information Column */
+.continf {
+    margin-top: 120px;
+    height: 840px;
+    flex: 1 1 100%;
+    max-width: 50%;
+    display: block;
+    align-items: center;
+    background-color: var(--white-wave);
+    padding: 40px 20px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.contacto-wrapper.continf {
+    border-top: 4px solid #ffffff;
+    border-left: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
 }
 
 .continf h2 {
-
     font-size: 1.4rem;
     color: var(--black);
     font-weight: bolder;
@@ -989,30 +976,7 @@ Contactos
     padding-bottom: 6px;
 }
 
-.contacto-wrapper.continf {
-    border-top: 4px solid #ffffff;
-    border-left: 4px solid #ffffff;
-    border-bottom: 4px solid #ffffff;
-}
-
-.continf {
-    margin-top: 120px;
-    height: 840px;
-    flex: 1 1 100%;
-    max-width: 50%;
-    display: block;
-    align-items: center;
-    background-color: var(--white-wave);
-    padding: 40px 20px;
-    border-radius: 30px 0px 0px 30px;
-}
-
-.contacto-wrapper.contform {
-    border-top: 4px solid #ffffff;
-    border-right: 4px solid #ffffff;
-    border-bottom: 4px solid #ffffff;
-}
-
+/* Contact Form Column */
 .contform {
     margin-top: 120px;
     margin-bottom: 60px;
@@ -1024,14 +988,17 @@ Contactos
     background-color: var(--white-wave);
     padding: 40px 20px;
     border-radius: 0px 30px 30px 0px;
-
 }
 
+.contacto-wrapper.contform {
+    border-top: 4px solid #ffffff;
+    border-right: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+
+/* Contact Content */
 .contac {
     margin: 0 0;
-
-
-
 }
 
 .contac h2 {
@@ -1042,23 +1009,22 @@ Contactos
     word-spacing: 0.004cap;
     margin-bottom: 5px;
     text-align: center;
-
 }
 
+/* Map Container */
 .mapcont {
-
     margin-bottom: 50px;
 }
 
 .realmap {
     border-radius: 30px 0px 0px 30px;
-
 }
 
 .creadomap {
     border-radius: 0px 30px 30px 0px;
 }
 
+/* Buttons */
 .contform .btn-1 {
     display: inline-block;
     padding: 10px 25px;
@@ -1075,11 +1041,9 @@ Contactos
     background-color: #ff0000;
 }
 
-/*------------------------------------*\
-TECNOLOGIA
-\*------------------------------------*/
+/* ----- Technology Section ----- */
 
-
+/* KUKA Section */
 .kuka {
     height: 460px;
     background: var(--white-wave);
@@ -1089,8 +1053,6 @@ TECNOLOGIA
     padding-top: 75px;
     display: flex;
     align-items: center;
-
-
 }
 
 .kuka-kuka-img {
@@ -1111,7 +1073,6 @@ TECNOLOGIA
 }
 
 .kuka-kuka-txt h2 {
-
     letter-spacing: 1px;
     word-spacing: 0.004cap;
     color: var(--black);
@@ -1131,9 +1092,7 @@ TECNOLOGIA
     font-weight: lighter;
 }
 
-
-
-
+/* FANUC Section */
 .fanuc {
     height: 460px;
     background: var(--gray-mist);
@@ -1143,8 +1102,6 @@ TECNOLOGIA
     padding-top: 75px;
     display: flex;
     align-items: center;
-
-
 }
 
 .fanuc-fanuc-img {
@@ -1165,7 +1122,6 @@ TECNOLOGIA
 }
 
 .fanuc-fanuc-txt h2 {
-
     letter-spacing: 1px;
     word-spacing: 0.004cap;
     color: var(--black);
@@ -1196,7 +1152,7 @@ TECNOLOGIA
     font-weight: lighter;
 }
 
-
+/* Technology Categories */
 .categories.tecnologia {
     background: var(--gray-mist);
 }
@@ -1211,7 +1167,6 @@ div.column-section.tecnologia {
 }
 
 .column-section.tecnologia img {
-    border-radius: 10px;
     border-radius: 10px 10px 0px 0px;
     flex-direction: column;
 }
@@ -1221,12 +1176,13 @@ button.block-button.tecnologia {
     height: 110px;
 }
 
-div#item-1.item.tecnologia {
+/* Technology Items */
+/* Common styles for all items */
+[id^="item-"].item.tecnologia {
     border: 4px solid var(--black);
-    margin: 60px 15px 20px 10px;
 }
 
-div#item-1.item.tecnologia h4 {
+[id^="item-"].item.tecnologia h4 {
     color: var(--white-wave);
 }
 
@@ -1234,130 +1190,44 @@ div.item-title.tecnologia {
     background: var(--Jet);
 }
 
-div#item-2.item.tecnologia {
-    border: 4px solid var(--black);
-    margin: 60px 10px 20px 15px;
+/* Individual item spacing */
+div#item-1.item.tecnologia {
+    margin: 60px 15px 20px 10px;
 }
 
-div#item-2.item.tecnologia h4 {
-    color: var(--white-wave);
+div#item-2.item.tecnologia {
+    margin: 60px 10px 20px 15px;
 }
 
 div#item-3.item.tecnologia {
-    border: 4px solid var(--black);
     margin: 60px 15px 60px 10px;
 }
 
-div#item-3.item.tecnologia h4 {
-    color: var(--white-wave);
-}
-
-div#item-4.item.tecnologia {
-    border: 4px solid var(--black);
-    margin: 60px 10px 60px 15px;
-}
-
-div#item-4.item.tecnologia h4 {
-    color: var(--white-wave);
-}
-
-div#item-5.item.tecnologia {
-    border: 4px solid var(--black);
-    margin: 60px 10px 60px 15px;
-}
-
-div#item-5.item.tecnologia h4 {
-    color: var(--white-wave);
-}
-
-div#item-6.item.tecnologia {
-    border: 4px solid var(--black);
-    margin: 60px 10px 60px 15px;
-}
-
-div#item-6.item.tecnologia h4 {
-    color: var(--white-wave);
-}
-
+div#item-4.item.tecnologia,
+div#item-5.item.tecnologia,
+div#item-6.item.tecnologia,
 div#item-7.item.tecnologia {
-    border: 4px solid var(--black);
     margin: 60px 10px 60px 15px;
 }
 
-div#item-7.item.tecnologia h4 {
-    color: var(--white-wave);
-}
-
-div#item-8.item.tecnologia {
-    border: 4px solid var(--black);
-    margin: 40px 80px;
-}
-
-div#item-8.item.tecnologia h4 {
-    color: var(--white-wave);
-}
-
+div#item-8.item.tecnologia,
 div#item-9.item.tecnologia {
-    border: 4px solid var(--black);
     margin: 40px 80px;
-}
-
-div#item-9.item.tecnologia h4 {
-    color: var(--white-wave);
 }
 
 div#item-10.item.tecnologia {
-    border: 4px solid var(--black);
     margin: 60px 10px 20px 15px;
 }
 
-div#item-10.item.tecnologia h4 {
-    color: var(--white-wave);
-}
-
 div#item-11.item.tecnologia {
-    border: 4px solid var(--black);
     margin: 60px 15px 60px 10px;
 }
 
-div#item-11.item.tecnologia h4 {
-    color: var(--white-wave);
-}
-
-div#item-12.item.tecnologia {
-    border: 4px solid var(--black);
-    margin: 60px 10px 60px 15px;
-}
-
-div#item-12.item.tecnologia h4 {
-    color: var(--white-wave);
-}
-
-div#item-13.item.tecnologia {
-    border: 4px solid var(--black);
-    margin: 60px 10px 60px 15px;
-}
-
-div#item-13.item.tecnologia h4 {
-    color: var(--white-wave);
-}
-
-div#item-14.item.tecnologia {
-    border: 4px solid var(--black);
-    margin: 60px 10px 60px 15px;
-}
-
-div#item-14.item.tecnologia h4 {
-    color: var(--white-wave);
-}
-
+div#item-12.item.tecnologia,
+div#item-13.item.tecnologia,
+div#item-14.item.tecnologia,
 div#item-15.item.tecnologia {
-    border: 4px solid var(--black);
     margin: 60px 10px 60px 15px;
-}
-
-div#item-15.item.tecnologia h4 {
-    color: var(--white-wave);
 }
 
 div#item-16.item.tecnologia {
@@ -1365,20 +1235,13 @@ div#item-16.item.tecnologia {
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 80px;
-    border: 4px solid var(--black);
 }
-
-div#item-16.item.tecnologia h4 {
-    color: var(--white-wave);
-}
-
-
 
 /*------------------------------------*\
- CAPACITACIONES
+  CAPACITACIONES
 \*------------------------------------*/
 
-/* -- Capacitacion -- */
+/* Base Layout Structure */
 .header-section-capacitacion {
     display: flex;
     justify-content: center;
@@ -1391,6 +1254,16 @@ div#item-16.item.tecnologia h4 {
     justify-self: center;
 }
 
+.header-section-servicios {
+    margin-top: 10vh;
+    height: 20vh;
+    background-image: url('images/inicio/lab-automatizacion-1.jfif');
+    justify-items: center;
+    align-content: center;
+    background-position-y: center;
+}
+
+/* Page Title Components */
 .page-title {
     width: 550px;
     display: flex;
@@ -1405,10 +1278,11 @@ div#item-16.item.tecnologia h4 {
     background: #ffffff73;
     border-radius: 2rem;
     padding: 30px 55px;
-    text-shadow: -1px -1px 0 rgb(255, 255, 255),             1px -1px 0 rgb(255, 255, 255),            -1px  1px 0 rgb(255, 255, 255),             1px  1px 0 rgb(255, 255, 255);
-
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+        -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
 }
 
+/* Page Offer and Swiper */
 .page-offer {
     width: 550px;
     overflow: hidden;
@@ -1419,17 +1293,17 @@ div#item-16.item.tecnologia h4 {
     height: 100%;
 }
 
+.page-offer .swiper-slide {
+    text-align: center;
+}
+
 .page-offer .swiper-slide img {
     height: 100%;
     object-fit: contain;
     width: -webkit-fill-available;
 }
 
-.page-offer .swiper-slide {
-    text-align: center;
-}
-
-/* Desplegable */
+/* Categories Section */
 .categories {
     width: 100%;
     justify-items: center;
@@ -1459,6 +1333,7 @@ div#item-16.item.tecnologia h4 {
     margin-inline: auto;
 }
 
+/* Text Components */
 .title {
     font-size: 30px;
     font-weight: bold;
@@ -1476,7 +1351,7 @@ div#item-16.item.tecnologia h4 {
     margin: 1rem;
 }
 
-/* Estilos para los bloques de imágenes y botones */
+/* Button Components */
 .block-button {
     background-size: cover;
     background-position: center;
@@ -1505,7 +1380,7 @@ div#item-16.item.tecnologia h4 {
     color: white;
 }
 
-/* Estilos para las secciones desplegables */
+/* Dropdown Sections */
 .section-dropdown {
     background: var(--white-wave);
     max-width: 1200px;
@@ -1515,6 +1390,10 @@ div#item-16.item.tecnologia h4 {
 .section-details {
     display: none;
     flex-direction: column;
+}
+
+.active {
+    display: flex;
 }
 
 .details-block {
@@ -1527,6 +1406,7 @@ div#item-16.item.tecnologia h4 {
     border-radius: 2rem;
 }
 
+/* Text & Image Blocks */
 .text-block {
     flex: 1;
     font-size: 16px;
@@ -1562,21 +1442,7 @@ div#item-16.item.tecnologia h4 {
     background-repeat: no-repeat;
 }
 
-/* Estilo para los botones de cada sección */
-.active {
-    display: flex;
-}
-
-/* -- Servicios -- */
-.header-section-servicios {
-    margin-top: 10vh;
-    height: 20vh;
-    background-image: url('images/inicio/lab-automatizacion-1.jpg');
-    justify-items: center;
-    align-content: center;
-    background-position-y: center;
-}
-
+/* Services Section */
 .service {
     text-align: center;
     align-content: center;
@@ -1586,7 +1452,8 @@ div#item-16.item.tecnologia h4 {
 }
 
 .service-text h1 {
-    text-shadow: -1px -1px 0 rgb(255, 255, 255),             1px -1px 0 rgb(255, 255, 255),            -1px  1px 0 rgb(255, 255, 255),             1px  1px 0 rgb(255, 255, 255);
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+        -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
 }
 
 .row-section {
@@ -1602,18 +1469,19 @@ div#item-16.item.tecnologia h4 {
     margin-left: 50px;
     margin-right: 50px;
     display: flex;
-    flex-wrap: wrap; /* Asegura que los items se alineen bien en pantallas pequeñas */
+    flex-wrap: wrap;
 }
 
+/* Item Cards */
 .item {
     text-align: center;
     margin: 50px 0;
     width: 100%;
-    max-width: 600px; /* Asegura que el tamaño máximo del bloque no sea mayor que 600px */
-    height: 400px;  /* Ajusta la altura del item */
+    max-width: 600px;
+    height: 400px;
     border: 4px solid black;
     border-radius: 16px;
-    perspective: 1000px; /* Necesario para el efecto de rotación */
+    perspective: 1000px;
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
@@ -1628,31 +1496,43 @@ div#item-16.item.tecnologia h4 {
     box-sizing: border-box;
 }
 
-/* Aseguramos que la rotación se activa al pasar el ratón */
 .item:hover .item-content {
-    transform: rotateY(180deg); /* Rotación al pasar el mouse */
+    transform: rotateY(180deg);
 }
 
-/* Se asegura de que la parte posterior quede oculta inicialmente */
-.item-front, .item-back {
+/* Card Faces */
+.item-front,
+.item-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;  /* Esto evita que la parte trasera sea visible antes de la rotación */
+    backface-visibility: hidden;
 }
 
-/* Parte frontal (Imagen + Título) */
 .item-front {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 2; /* Asegura que la parte frontal esté arriba al principio */
-    background-color: transparent; /* Hace que el fondo sea transparente */
+    z-index: 2;
+    background-color: transparent;
 }
 
+.item-back {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+/* Item Components */
 .item-title {
     padding: 1rem;
-    background: var(--Jet);  /* Fondo con algo de transparencia */
+    background: var(--Jet);
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     height: 25%;
@@ -1668,23 +1548,10 @@ div#item-16.item.tecnologia h4 {
 
 .item-image {
     width: 100%;
-    height: 80%;  /* Ajusta la altura de la imagen */
+    height: 80%;
     object-fit: cover;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-}
-
-/* Parte posterior (Descripción) */
-.item-back {
-    background-color: #f0f0f0;  /* Fondo del reverso */
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 16px;
-    z-index: 1;  /* La parte trasera debe estar detrás de la parte frontal al principio */
-    transform: rotateY(180deg); /* Hace que la parte trasera se voltee por defecto */
 }
 
 .item-description {
@@ -1692,20 +1559,21 @@ div#item-16.item.tecnologia h4 {
     color: #333;
 }
 
-.item-description p{
+.item-description p {
     font-size: 20px;
     text-align: justify;
     color: white;
 }
 
-/* Descripción normal (anterior) */
-.item-description, .item-description-hover {
+/* Hover Description Styles */
+.item-description,
+.item-description-hover {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    backface-visibility: hidden; /* Ocultar la parte trasera */
+    backface-visibility: hidden;
     padding: 20px;
     background-color: var(--Jet);
     align-content: center;
@@ -1713,9 +1581,8 @@ div#item-16.item.tecnologia h4 {
     border-radius: 12px;
 }
 
-/* Descripción alternativa que aparece al girar */
 .item-description-hover {
-    transform: rotateY(180deg); /* Colocar el contenido alternativo en la parte trasera */
+    transform: rotateY(180deg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1730,12 +1597,10 @@ div#item-16.item.tecnologia h4 {
 .item:hover .item-description-hover {
     display: block;
 }
-/* -- -- */
 
 /*------------------------------------*\
- CHAT BOT
+  CHAT BOT
 \*------------------------------------*/
-
 
 /* Chat Icon Floating Button */
 .chat-icon {
@@ -1754,9 +1619,8 @@ div#item-16.item.tecnologia h4 {
     font-size: 1.4rem;
 }
 
-/* Chat Window */
+/* Chat Window Container */
 .chat-window {
-
     display: none;
     position: fixed;
     bottom: 85px;
@@ -1768,11 +1632,7 @@ div#item-16.item.tecnologia h4 {
     z-index: 1000;
 }
 
-.chat-window h3 {
-    font-size: 1.4rem;
-    color: var(--white-wave);
-}
-
+/* Chat Header */
 .chat-header {
     background-color: #25D366;
     color: white;
@@ -1781,11 +1641,17 @@ div#item-16.item.tecnologia h4 {
     border-top-right-radius: 10px;
 }
 
+.chat-window h3 {
+    font-size: 1.4rem;
+    color: var(--white-wave);
+}
+
 .chat-header .close-chat {
     float: right;
     cursor: pointer;
 }
 
+/* Chat Body */
 .chat-body {
     padding: 10px;
 }
@@ -1796,6 +1662,7 @@ div#item-16.item.tecnologia h4 {
     margin-top: 10px;
 }
 
+/* Chat Controls */
 .chat-body button {
     width: 100%;
     padding: 10px;
@@ -1816,11 +1683,6 @@ div#item-16.item.tecnologia h4 {
     margin-top: 10px;
     cursor: pointer;
 }
-
-/*------------------------------------*\
-  6. Media Queries
-  - Estilos responsivos para móviles
-\*------------------------------------*/
 
 @media (max-width: 768px) {
 
@@ -2265,7 +2127,7 @@ div#item-16.item.tecnologia h4 {
 
 
     /* 13. horario*/
-    
+
 
     .horario {
         padding-top: 40px;
@@ -2539,119 +2401,6 @@ Nosotros
         margin: 10px 10px;
     }
 
-
-    /*------------------------------------*\
-Productos
-  \*------------------------------------*/
-
-
-    .tabs.container {
-        padding-top: 30px;
-    }
-
-    .tabs {
-        display: center;
-        padding-bottom: 20px;
-        justify-content: space-between;
-    }
-
-
-    .tabs label {
-        margin-bottom: 30px;
-        flex: 1;
-        font-size: 12px;
-        line-height: 1.3;
-        letter-spacing: 1px;
-        word-spacing: 0.004cap;
-        font-size: bold;
-        text-align: center;
-
-    }
-
-    .tab {
-        padding: 0 20px;
-    }
-
-    .products {
-        height: 510px;
-        width: 100%;
-
-    }
-
-    .product {
-
-        width: 15rem;
-        height: 340px;
-        padding: 10px 0px;
-        margin: 0 auto;
-        padding-top: 10px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        border: 4px solid #ffffff;
-    }
-
-    .product-txt {
-        margin: 15px auto;
-        margin-top: 20px;
-    }
-
-    .product-txt h4 {
-
-        font-size: 14px;
-        line-height: 1.3;
-        letter-spacing: 1px;
-        word-spacing: 0.004cap;
-        font-weight: bold;
-    }
-
-    .product-txt p {
-        text-align: center;
-        font-size: 12px;
-        line-height: 1.3;
-        letter-spacing: 1px;
-        word-spacing: 0.004cap;
-    }
-
-    .product-txt span {
-        text-align: center;
-        font-size: 12px;
-        line-height: 1.3;
-        letter-spacing: 1px;
-        word-spacing: 0.004cap;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        font-weight: lighter;
-    }
-
-    .product-img {
-        display: inline;
-        text-align: center;
-        align-items: center;
-        width: 100%;
-
-    }
-
-    .product-img h4 {
-        text-align: center;
-        font-size: 12px;
-        line-height: 1.3;
-        letter-spacing: 1px;
-        word-spacing: 0.004cap;
-        display: inline;
-    }
-
-    .product-img img {
-
-        text-align: center;
-        align-items: center;
-        margin-bottom: 10px;
-        width: 180px;
-        height: 140px;
-        border-radius: 10px;
-    }
-
-
     /*------------------------------------*\
 TECNOLOGIA
   \*------------------------------------*/
@@ -2763,7 +2512,7 @@ TECNOLOGIA
         border-radius: 20px;
     }
 
-    
+
 
     div.column-section.tecnologia {
         margin: 0;
@@ -2989,6 +2738,7 @@ TECNOLOGIA
     div#item-16.item.tecnologia h4 {
         color: var(--white-wave);
     }
+
     /*------------------------------------*\
 Contactos
 \*------------------------------------*/
@@ -3089,106 +2839,106 @@ Contactos
     .header-section-capacitacion {
         flex-direction: column;
     }
-    
+
     .categorie {
         width: 100%;
     }
-    
+
     .page-title {
         width: 100%;
         margin: 0;
         padding: 1.5rem;
     }
-    
+
     .page-title h1 {
         font-size: 1.4rem;
         padding: .5rem 1rem;
         border-radius: 1rem;
     }
-    
+
     .page-offer {
         width: 90%;
         margin: 1rem;
         place-self: center;
     }
-    
+
     .swiper-slide img {
         width: -webkit-fill-available;
     }
-    
+
     .column-1 {
         margin: 1rem;
         padding-inline: 2rem;
     }
-    
+
     .column-2 {
         flex-direction: column;
     }
-    
+
     .block {
         width: 100%;
     }
-    
+
     .block-button {
         width: 80%;
     }
-    
+
     .section-dropdown {
         width: 100%;
     }
-    
+
     .text-block {
         width: 100%;
     }
-    
+
     .details-block {
         flex-direction: column;
         margin: 1rem;
         padding: 1rem 0;
         height: 90vh;
         border-radius: 0;
-    
+
     }
-    
+
     .text-title {
         margin: 1rem;
     }
-    
+
     .text-description {
         margin: 1rem;
     }
-    
+
     .text-description h5 {
         font-size: 1.2rem;
     }
-    
+
     .text-description p {
         font-size: 1rem;
     }
-    
+
     .image-block {
         max-width: 90%;
         margin: 5%;
     }
-    
+
     /* -- Servicios -- */
     .header-section-servicios {
         background-size: cover;
     }
-    
+
     .row-section {
         margin: 25px 0;
     }
-    
+
     .item {
         height: 50vh;
         margin: 25px 0;
     }
-    
+
     .item-title {
         padding: 0;
     }
-    
+
     .column-section {
         width: 100%;
         margin: 0 1rem;
