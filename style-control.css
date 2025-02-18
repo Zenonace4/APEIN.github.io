@@ -1178,6 +1178,10 @@ button.block-button.tecnologia {
 
 /* Technology Items */
 /* Common styles for all items */
+.item:hover .item-content.tecnologia {
+    transform: rotateY(0deg);
+}
+
 [id^="item-"].item.tecnologia {
     border: 4px solid var(--black);
 }
