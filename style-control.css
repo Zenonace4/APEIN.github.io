@@ -47,18 +47,18 @@ h4,
 h5,
 h6,
 p {
-    font-family: 'Montserrat';
+    font-family: 'montserrat';
     color: var(--black);
     line-height: 1.2;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
@@ -68,18 +68,27 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 h5 {
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 h6 {
     font-size: 1rem;
     font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    word-spacing: 0.004cap;
+
 }
 
 /* 5. Navigation */
@@ -183,7 +192,6 @@ h6 {
     width: 200px;
 }
 
-
 /* 8. Social Media Icons */
 .lab-menu-2 {
     display: flex;
@@ -253,19 +261,16 @@ span.swiper-pagination-bullet-active {
 
 /* 10.Header and Title Styles*/
 
-
 .header-content {
     background-image: url('images/inicio/lab-automatizacion-1.jpg');
     background-size: 100%;
     background-position: 0cap;
-
 }
 
 .titulo {
     margin-top: 69px;
     padding: 30px 0;
 }
-
 
 .titulo h1 {
     text-align: center;
@@ -275,13 +280,11 @@ span.swiper-pagination-bullet-active {
         1px -1px 0 rgb(255, 255, 255),
         -1px 1px 0 rgb(255, 255, 255),
         1px 1px 0 rgb(255, 255, 255);
-    font-size: 2.3rem;
 }
 
 .titulo h2 {
     color: var(--gray-mist);
 }
-
 
 /* 11. ofrecemos y slider*/
 
@@ -307,25 +310,15 @@ span.swiper-pagination-bullet-active {
 }
 
 .slider-txt h2 {
+    color: var(--black);
     margin: 0 10px 10px;
-    font-family: 'montserrat';
     text-align: center;
-    font-size: 27pt;
-    line-height: 1.3;
-    letter-spacing: 2px;
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
 }
 
 .slider-txt p {
     margin: 20px 30px;
-    font-size: 16px;
-    line-height: 1.3;
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
-    color: #000;
+    color: var(--black);
     text-align: justify;
-    font-weight: lighter;
 }
 
 .slider-img {
@@ -369,7 +362,6 @@ span.swiper-pagination-bullet-active {
     cursor: pointer;
 }
 
-
 /* Imagen grande de previsualización */
 .preview {
     display: none;
@@ -400,7 +392,6 @@ span.swiper-pagination-bullet-active {
     margin: 70px 0 0 25px;
     text-align: center;
 }
-
 
 /* 12. Botones styles*/
 
@@ -456,26 +447,15 @@ span.swiper-pagination-bullet-active {
 }
 
 .autom-autom-txt h2 {
-
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
     color: var(--black);
-    font-weight: bolder;
-    text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
 .autom-autom-txt p {
     margin: 20px 0px;
-    font-size: 16px;
-    line-height: 1.3;
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
-    color: #000;
+    color: var(--black);
     text-align: justify;
-    font-weight: lighter;
 }
-
 
 .contr {
     height: 460px;
@@ -506,23 +486,14 @@ span.swiper-pagination-bullet-active {
 }
 
 .contr-contr-txt h2 {
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
     color: var(--black);
-    font-weight: bolder;
-    text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
 .contr-contr-txt p {
     margin: 20px 0px;
-    font-size: 16px;
-    line-height: 1.3;
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
-    color: #000;
+    color: var(--black);
     text-align: justify;
-    font-weight: lighter;
 }
 
 
@@ -543,7 +514,6 @@ span.swiper-pagination-bullet-active {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0;
-
 }
 
 .face,
@@ -565,7 +535,6 @@ span.swiper-pagination-bullet-active {
 }
 
 .red-wrapper .fb-page {
-
     flex: 1 1 100%;
     max-width: 50%;
     display: flex;
@@ -591,7 +560,6 @@ span.swiper-pagination-bullet-active {
     display: flex;
     align-items: center;
     padding: 0px 10px;
-
 }
 
 /* 14.Horario*/
@@ -601,11 +569,8 @@ span.swiper-pagination-bullet-active {
 }
 
 .horario-info h2 {
-    font-size: 1.4rem;
-    color: var(--black);
-    font-weight: bolder;
-    letter-spacing: 0.8px;
-    word-spacing: 0.004cap;
+    font-size: 1.6rem;
+    color: var(--black);   
     margin-bottom: 5px;
 }
 
@@ -619,32 +584,13 @@ span.swiper-pagination-bullet-active {
 }
 
 .txt h5 {
-    font-size: 1rem;
-    letter-spacing: 0.8px;
-    word-spacing: 0.004cap;
     color: var(--black);
-    font-weight: bolder;
     padding: 8px 0;
-
 }
 
 .txt h6 {
-    font-size: 0.7rem;
-    letter-spacing: 0.8px;
-    word-spacing: 0.004cap;
-    color: var(--black);
-
-    padding: 5px 0;
-
-}
-
-.txt p {
-    font-size: 0.8rem;
-    letter-spacing: 0.6px;
-    word-spacing: 0.004cap;
-    color: var(--black);
-    font-weight: lighter;
-    margin-bottom: 4px;
+    color: var(--black);    
+    padding: 1px 0;
 }
 
 /* 15. Mapa*/
@@ -656,7 +602,6 @@ span.swiper-pagination-bullet-active {
 }
 
 .mapa-mapa {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -670,14 +615,12 @@ span.swiper-pagination-bullet-active {
     flex-direction: column;
     align-items: center;
     border: 3px solid var(--white-wave);
-
 }
 
 .mapas {
     width: 100%;
     height: 360px;
 }
-
 
 /* 16. footer*/
 .footert {
@@ -694,9 +637,7 @@ span.swiper-pagination-bullet-active {
 .footert h2 {
     padding-top: 1.5rem;
     text-align: center;
-    font-size: 1.5rem;
     color: var(--gray-mist);
-    font-weight: bolder;
     letter-spacing: 4px;
     word-spacing: 0.004cap;
     margin-bottom: 5px;
@@ -706,23 +647,24 @@ span.swiper-pagination-bullet-active {
     font-size: 1rem;
     letter-spacing: 0.8px;
     word-spacing: 0.004cap;
+    margin-left: 10px;
     color: var(--gray-mist);
-    font-weight: bolder;
     text-transform: uppercase;
 }
 
 .links h5 ul {
-    padding-top: 10px;
+    padding-top: 5px;
+    margin-right: 10px;
 }
 
 .links ul li a {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: var(--white-wave);
     font-weight: lighter;
     line-height: 1.3;
     letter-spacing: 1px;
     word-spacing: 0.004cap;
-    margin: 4px 0;
+    margin: 4px 0px;
     display: inline-block;
 }
 
@@ -736,7 +678,6 @@ span.swiper-pagination-bullet-active {
     padding: 2px 0;
     font-size: 0.6rem;
 }
-
 
 /* ---------------------------------------------
 Table of Contents:
@@ -798,23 +739,14 @@ Table of Contents:
 }
 
 .mision-mision-txt h2 {
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
     color: var(--black);
-    font-weight: bolder;
-    text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
 .mision-mision-txt p {
     margin: 20px 0px;
-    font-size: 16px;
-    line-height: 1.3;
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
-    color: #000;
+    color: var(--black);
     text-align: justify;
-    font-weight: lighter;
 }
 
 /* 1.3 Vision Section */
@@ -846,23 +778,14 @@ Table of Contents:
 }
 
 .vision-vision-txt h2 {
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
     color: var(--black);
-    font-weight: bolder;
-    text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
 .vision-vision-txt p {
     margin: 20px 0;
-    font-size: 16px;
-    line-height: 1.3;
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
-    color: #000;
+    color:var(--black);
     text-align: justify;
-    font-weight: lighter;
 }
 
 /* 2. Events (Eventos) Section */
@@ -933,7 +856,7 @@ Table of Contents:
 /* Contact Information Column */
 .continf {
     margin-top: 120px;
-    height: 840px;
+    height: 890px;
     flex: 1 1 100%;
     max-width: 50%;
     display: block;
@@ -959,17 +882,15 @@ Table of Contents:
 }
 
 .continf h5 {
-    font-size: 1.2rem;
     letter-spacing: 0.5px;
     word-spacing: 0.004cap;
     color: var(--black);
-    font-weight: bolder;
     padding: 10px 0;
     padding-top: 15px;
 }
 
 .continf p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.5px;
     word-spacing: 0.004cap;
     color: var(--black);
@@ -981,7 +902,7 @@ Table of Contents:
 .contform {
     margin-top: 120px;
     margin-bottom: 60px;
-    height: 840px;
+    height: 890px;
     flex: 1 1 100%;
     max-width: 50%;
     display: flex;
@@ -1003,11 +924,7 @@ Table of Contents:
 }
 
 .contac h2 {
-    font-size: 1.4rem;
     color: var(--black);
-    font-weight: block;
-    letter-spacing: 0.8px;
-    word-spacing: 0.004cap;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -1074,23 +991,14 @@ Table of Contents:
 }
 
 .kuka-kuka-txt h2 {
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
     color: var(--black);
-    font-weight: bolder;
-    text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
 .kuka-kuka-txt p {
     margin: 20px 0px;
-    font-size: 16px;
-    line-height: 1.3;
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
-    color: #000;
+    color:var(--black);
     text-align: justify;
-    font-weight: lighter;
 }
 
 /* FANUC Section */
@@ -1123,35 +1031,20 @@ Table of Contents:
 }
 
 .fanuc-fanuc-txt h2 {
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
     color: var(--black);
-    font-weight: bolder;
-    text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
 .fanuc-fanuc-txt p {
     margin: 20px 0px;
-    font-size: 16px;
-    line-height: 1.3;
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
-    color: #000;
+    color: var(--black);
     text-align: justify;
-    font-weight: lighter;
 }
-
 
 .description.tecnologia p {
     margin: 20px 30px;
-    font-size: 16px;
-    line-height: 1.3;
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
-    color: #000;
+    color: var(--black);
     text-align: justify;
-    font-weight: lighter;
 }
 
 /* Technology Categories */
@@ -1280,7 +1173,6 @@ div#item-16.item.tecnologia {
 }
 
 .page-title h1 {
-    font-size: 2.5rem;
     text-align: center;
     background: #ffffff73;
     border-radius: 2rem;
@@ -1353,7 +1245,6 @@ div#item-16.item.tecnologia {
 }
 
 .description p {
-    font-size: 20px;
     text-align: justify;
     margin: 1rem;
 }
@@ -1406,7 +1297,7 @@ div#item-16.item.tecnologia {
 .details-block {
     display: flex;
     background: var(--gray-mist);
-    height: 600px;
+    height: 650px;
     padding: 2rem;
     margin: 2rem;
     border: 4px solid white;
@@ -1416,7 +1307,6 @@ div#item-16.item.tecnologia {
 /* Text & Image Blocks */
 .text-block {
     flex: 1;
-    font-size: 16px;
     color: #333;
     width: 1200px;
     align-content: center;
@@ -1433,13 +1323,10 @@ div#item-16.item.tecnologia {
 
 .text-description h5 {
     margin: 0.5rem;
-    font-size: 28px;
-    font-weight: 600;
 }
 
 .text-description p {
     margin: 0.5rem;
-    font-size: 20px;
 }
 
 .image-block {
@@ -1547,8 +1434,6 @@ div#item-16.item.tecnologia {
 }
 
 .item-title h4 {
-    font-family: sans-serif;
-    font-size: 18px;
     color: white;
     margin: 0;
     text-align: center;
@@ -1563,12 +1448,10 @@ div#item-16.item.tecnologia {
 }
 
 .item-description {
-    font-size: 16px;
-    color: #333;
+    color: var(--Jet);
 }
 
 .item-description p {
-    font-size: 20px;
     text-align: justify;
     color: white;
 }
@@ -1694,36 +1577,6 @@ div#item-16.item.tecnologia {
 
 @media (max-width: 768px) {
 
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-    }
-
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    h4 {
-        font-size: 1.25rem;
-    }
-
-    h5 {
-        font-size: 1.1rem;
-    }
-
-    h6 {
-        font-size: 1rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
     a {
         font-size: 1.4rem;
     }
@@ -1759,8 +1612,6 @@ div#item-16.item.tecnologia {
         inline-size: center;
         width: 200px;
     }
-
-
 
     .lab-menu-icono {
         width: 30px;
@@ -1861,11 +1712,8 @@ div#item-16.item.tecnologia {
         margin-bottom: 80px;
     }
 
-
     .header-content {
-
         flex-direction: column;
-
     }
 
     .titulo {
@@ -1901,9 +1749,7 @@ div#item-16.item.tecnologia {
         border-radius: 15px;
     }
 
-
     .slider-txt {
-
         margin-left: 0;
         width: 100%;
         text-align: center;
@@ -1918,18 +1764,12 @@ div#item-16.item.tecnologia {
         letter-spacing: 1px;
         word-spacing: 0.004cap;
         font-weight: bolder;
-
     }
 
     .slider-txt p {
         margin: 0px 0px;
         text-align: justify;
-        font-size: 1rem;
-        line-height: 1.3;
-        letter-spacing: 1px;
-        word-spacing: 0.004cap;
     }
-
 
     .slider-img {
         margin: 0px 0;
@@ -1949,13 +1789,11 @@ div#item-16.item.tecnologia {
     .laborat img {
         margin-top: 20px;
         height: 10rem;
-
     }
 
     .curso img {
         margin-top: 20px;
         height: 12rem;
-
     }
 
     .novedades img {
@@ -1966,20 +1804,17 @@ div#item-16.item.tecnologia {
     .flujo img {
         margin-top: 20px;
         height: 10rem;
-
     }
 
     .kuka img {
         margin-top: 20px;
         height: 10rem;
-
     }
 
     .fanuc img {
         margin-top: 20px;
         height: 12rem;
     }
-
 
     .botones {
         margin: 20px 0;
@@ -1993,11 +1828,9 @@ div#item-16.item.tecnologia {
         font-size: 1rem;
     }
 
-
     .autom {
-        height: 37rem;
+        height: 34rem;
     }
-
 
     .autom-autom {
         padding: 40px 30px;
@@ -2008,7 +1841,6 @@ div#item-16.item.tecnologia {
     .autom-autom-txt {
         width: 100%;
         text-align: center;
-
     }
 
     .autom-autom-txt h2 {
@@ -2021,10 +1853,7 @@ div#item-16.item.tecnologia {
 
     .autom-autom-txt p {
         text-align: justify;
-        font-size: 1rem;
-        line-height: 1.3;
-        letter-spacing: 1px;
-        word-spacing: 0.004cap;
+   
     }
 
     .autom-autom-img {
@@ -2041,17 +1870,13 @@ div#item-16.item.tecnologia {
         border-radius: 20px;
     }
 
-
     .contr {
-        height: 47rem;
-
+        height: 37rem;
         .container {
             flex-direction: column-reverse;
             /* Invierte la posición en móviles */
         }
-
     }
-
 
     .contr-contr {
         padding: 40px 30px;
@@ -2063,7 +1888,6 @@ div#item-16.item.tecnologia {
         padding-top: 20px;
         width: 100%;
         text-align: center;
-
     }
 
     .contr-contr-txt h2 {
@@ -2075,12 +1899,7 @@ div#item-16.item.tecnologia {
     }
 
     .contr-contr-txt p {
-
         text-align: justify;
-        font-size: 1.2rem;
-        line-height: 1.3;
-        letter-spacing: 1px;
-        word-spacing: 0.004cap;
     }
 
     .contr-contr-img {
@@ -2096,8 +1915,6 @@ div#item-16.item.tecnologia {
         margin-top: 20px;
         border-radius: 20px;
     }
-
-
 
     /* 13. Social*/
     .face {
@@ -2120,7 +1937,6 @@ div#item-16.item.tecnologia {
     }
 
     .red-wrapper .fb-page {
-
         max-width: 100%;
         margin: 0;
     }
@@ -2133,9 +1949,7 @@ div#item-16.item.tecnologia {
         margin-bottom: 40px;
     }
 
-
     /* 13. horario*/
-
 
     .horario {
         padding-top: 40px;
@@ -2145,13 +1959,12 @@ div#item-16.item.tecnologia {
     }
 
     .horario-info h2 {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         line-height: 1.3;
         letter-spacing: 1px;
         word-spacing: 0.004cap;
         font-weight: bolder;
         text-align: center;
-
     }
 
     .horario-info h4 {
@@ -2180,7 +1993,6 @@ div#item-16.item.tecnologia {
     }
 
     .mapa-mapa {
-
         padding: 0px 0;
         flex-direction: column;
     }
@@ -2197,7 +2009,6 @@ div#item-16.item.tecnologia {
     .mapas {
         width: 100%;
         height: 360px;
-
     }
 
     .footer {
@@ -2248,15 +2059,9 @@ Nosotros
         max-height: 32.7rem;
     }
 
-
-
-
     .mision {
-
         height: 36rem;
-
     }
-
 
     .mision-mision {
         padding: 40px 30px;
@@ -2267,7 +2072,6 @@ Nosotros
     .mision-mision-txt {
         width: 100%;
         text-align: center;
-
     }
 
     .mision-mision-txt h2 {
@@ -2301,16 +2105,12 @@ Nosotros
     }
 
     .vision {
-
         height: 44rem;
-
         .container {
             flex-direction: column-reverse;
             /* Invierte la posición en móviles */
         }
-
     }
-
 
     .vision-vision {
         padding: 40px 30px;
@@ -2322,7 +2122,6 @@ Nosotros
         padding-top: 20px;
         width: 100%;
         text-align: center;
-
     }
 
     .vision-vision-txt h2 {
@@ -2334,7 +2133,6 @@ Nosotros
     }
 
     .vision-vision-txt p {
-
         text-align: justify;
         font-size: 1.2rem;
         line-height: 1.3;
@@ -2356,19 +2154,16 @@ Nosotros
         border-radius: 20px;
     }
 
-
     .cert {
         display: inline-flex;
         margin: 0 auto;
         align-items: center;
         flex-direction: column;
-
     }
 
     .certificado {
         padding: 40px 0px;
         text-align: center;
-
     }
 
     .certificado h2 {
@@ -2376,17 +2171,12 @@ Nosotros
     }
 
     .cert-text {
-
         margin: 0 auto;
         text-align: center;
     }
 
     .cert-text h2 {
-        font-size: 21px;
-        line-height: 1.3;
-        letter-spacing: 1px;
-        word-spacing: 0.004cap;
-        font-weight: bolder;
+        font-size: 1.4rem;
     }
 
     .cert-img {
@@ -2402,7 +2192,6 @@ Nosotros
         border-radius: 0px;
     }
 
-
     .certimg {
         border-radius: 0px;
         border: 4px solid var(--gray-mist);
@@ -2413,13 +2202,9 @@ Nosotros
 TECNOLOGIA
   \*------------------------------------*/
 
-
     .fanuc {
-
         height: 28rem;
-
     }
-
 
     .fanuc-fanuc {
         padding: 40px 30px;
@@ -2430,7 +2215,6 @@ TECNOLOGIA
     .fanuc-fanuc-txt {
         width: 100%;
         text-align: center;
-
     }
 
     .fanuc-fanuc-txt h2 {
@@ -2464,19 +2248,15 @@ TECNOLOGIA
     }
 
     .kuka {
-
         height: 34rem;
-
         .container {
             flex-direction: column-reverse;
             /* Invierte la posición en móviles */
         }
-
     }
 
 
     .kuka-kuka {
-
         padding: 40px 30px;
         padding-top: 50px;
         flex-direction: column;
@@ -2486,7 +2266,6 @@ TECNOLOGIA
         padding-top: 20px;
         width: 100%;
         text-align: center;
-
     }
 
     .kuka-kuka-txt h2 {
@@ -2498,7 +2277,6 @@ TECNOLOGIA
     }
 
     .kuka-kuka-txt p {
-
         text-align: justify;
         font-size: 1rem;
         line-height: 1.3;
@@ -2543,8 +2321,6 @@ TECNOLOGIA
 
 
     div.column-section.tecnologia {
-        margin: 0;
-
         margin: auto;
     }
 
@@ -2661,7 +2437,8 @@ TECNOLOGIA
     div#item-9.item.tecnologia h4 {
         color: var(--white-wave);
     }
-   div#item-17.item.tecnologia {
+
+    div#item-17.item.tecnologia {
         width: 340px;
         border: 4px solid var(--black);
         margin: 0 auto;
@@ -2672,6 +2449,7 @@ TECNOLOGIA
     div#item-17.item.tecnologia h4 {
         color: var(--white-wave);
     }
+
     div#item-10.item.tecnologia {
         width: 340px;
         border: 4px solid var(--black);
@@ -2760,17 +2538,23 @@ TECNOLOGIA
 Contactos
 \*------------------------------------*/
     .contacto-contacto {
-
         padding: 0px 0px;
         padding-top: 0px;
         flex-direction: column;
+    }
+
+    .contacto-wrapper.continf {
+        border-right: 4px solid #ffffff;
+    }
+
+    .contacto-wrapper.contform {
+        border-left: 4px solid #ffffff;
     }
 
     .continf {
         width: 100%;
         text-align: center;
     }
-
 
     .contacto-contacto h2 {
         font-size: 0.9rem;
@@ -2779,7 +2563,6 @@ Contactos
         word-spacing: 0.004cap;
         font-weight: bolder;
         text-align: center;
-
     }
 
     .contacto-contacto h4 {
@@ -2816,7 +2599,6 @@ Contactos
         border-radius: 0px 0px 0 0;
         padding-top: 30px;
         padding-bottom: 30px;
-
     }
 
     .contacto-contacto .contform {
@@ -2914,7 +2696,6 @@ Contactos
         padding: 1rem 0;
         height: 90vh;
         border-radius: 0;
-
     }
 
     .text-title {
@@ -2960,5 +2741,4 @@ Contactos
     .item-description p {
         font-size: 1rem;
     }
-
 }
