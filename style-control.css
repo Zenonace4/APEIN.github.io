@@ -712,7 +712,7 @@ Table of Contents:
 /* 1.2 Mission Section */
 .mision {
     height: 460px;
-    background: var(--white-wave);
+    background: var(--gray-mist);
 }
 
 .mision-mision {
@@ -752,7 +752,7 @@ Table of Contents:
 /* 1.3 Vision Section */
 .vision {
     height: 460px;
-    background: var(--gray-mist);
+    background: var(--white-wave);
 }
 
 .vision-vision {
