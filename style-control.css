@@ -86,10 +86,10 @@ p {
     font-size: 1rem;
     font-weight: lighter;
     line-height: 1.2;
-    letter-spacing: 1px;
-    word-spacing: 0.004cap;
-
+    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
 }
+
 
 /* 5. Navigation */
 .lab-menu {
