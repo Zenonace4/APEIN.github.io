@@ -1,21 +1,21 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const chatWindow = document.querySelector('.chat-window');
     const chatIcon = document.querySelector('.chat-icon');
     const closeButton = document.querySelector('.close-chat');
 
     // Función para mostrar/ocultar el chat
-    chatIcon.addEventListener('click', function() {
+    chatIcon.addEventListener('click', function () {
         const isVisible = chatWindow.style.display === 'block';
         chatWindow.style.display = isVisible ? 'none' : 'block';
     });
 
     // Cerrar al hacer click en el botón de cerrar (X)
-    closeButton.addEventListener('click', function() {
+    closeButton.addEventListener('click', function () {
         chatWindow.style.display = 'none';
     });
 
     // Cerrar al hacer click fuera del chat
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         if (!chatWindow.contains(event.target) && !chatIcon.contains(event.target)) {
             chatWindow.style.display = 'none';
         }
@@ -124,7 +124,7 @@ window.addEventListener('resize', function () {
 function toggleSection(sectionId) {
     // Ocultar todas las secciones
     const sections = document.querySelectorAll('.section-details');
-    sections.forEach(function(section) {
+    sections.forEach(function (section) {
         section.classList.remove('active');
     });
 
@@ -150,5 +150,114 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const smallImage = document.querySelector(".image-block.imblock1");
+    const previewImage = document.querySelector(".preview.imagen1");
+
+    // Mostrar la imagen al hacer clic en la imagen pequeña
+    smallImage.addEventListener("click", function () {
+        previewImage.style.display = "block";
+    });
+
+    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
+    document.addEventListener("click", function (event) {
+        if (event.target !== smallImage && event.target !== previewImage) {
+            previewImage.style.display = "none";
+        }
+    });
+});
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const smallImage = document.querySelector(".image-block.imblock2");
+    const previewImage = document.querySelector(".preview.imagen2");
+
+    // Mostrar la imagen al hacer clic en la imagen pequeña
+    smallImage.addEventListener("click", function () {
+        previewImage.style.display = "block";
+    });
+
+    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
+    document.addEventListener("click", function (event) {
+        if (event.target !== smallImage && event.target !== previewImage) {
+            previewImage.style.display = "none";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const smallImage = document.querySelector(".image-block.imblock3");
+    const previewImage = document.querySelector(".preview.imagen3");
+
+    // Mostrar la imagen al hacer clic en la imagen pequeña
+    smallImage.addEventListener("click", function () {
+        previewImage.style.display = "block";
+    });
+
+    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
+    document.addEventListener("click", function (event) {
+        if (event.target !== smallImage && event.target !== previewImage) {
+            previewImage.style.display = "none";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const smallImage = document.querySelector(".image-block.imblock4");
+    const previewImage = document.querySelector(".preview.imagen4");
+
+    // Mostrar la imagen al hacer clic en la imagen pequeña
+    smallImage.addEventListener("click", function () {
+        previewImage.style.display = "block";
+    });
+
+    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
+    document.addEventListener("click", function (event) {
+        if (event.target !== smallImage && event.target !== previewImage) {
+            previewImage.style.display = "none";
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleccionar todos los enlaces con href que comienzan con #
+    const enlaces = document.querySelectorAll('a[href^="#"]');
+    
+    enlaces.forEach(enlace => {
+        enlace.addEventListener('click', function(evento) {
+            // Prevenir el comportamiento por defecto del enlace
+            evento.preventDefault();
+            
+            // Obtener el ID objetivo del enlace
+            const idObjetivo = this.getAttribute('href').substring(1);
+            
+            // Encontrar el elemento objetivo
+            const elementoObjetivo = document.getElementById(idObjetivo);
+            
+            if (elementoObjetivo) {
+                // Encontrar la sección padre
+                const seccionPadre = elementoObjetivo.closest('.section-details');
+                
+                if (seccionPadre) {
+                    // Ocultar todas las secciones
+                    const todasLasSecciones = document.querySelectorAll('.section-details');
+                    todasLasSecciones.forEach(seccion => {
+                        seccion.classList.remove('active');
+                    });
+                    
+                    // Activar la sección padre
+                    seccionPadre.classList.add('active');
+                    
+                    // Desplazar suavemente a la sección padre
+                    seccionPadre.scrollIntoView({ behavior: 'smooth' });
+                    
+                    // Pequeño retraso para asegurar que la sección está abierta
+                    setTimeout(() => {
+                        // Desplazar al elemento específico
+                        elementoObjetivo.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 300);
+                }
+            }
+        });
+    });
+});
