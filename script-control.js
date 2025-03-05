@@ -340,35 +340,76 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const courseButtons = document.querySelectorAll('.block-button');
-    
-    // Función para aplicar estilos base a los botones
-    function setBaseButtonStyles(button) {
+    const courseImages = document.querySelectorAll('.swiper-slide a');
+
+    // Function to highlight a button by its target section
+    function highlightButton(targetSection) {
+        // Reset all buttons
+        courseButtons.forEach(btn => {
+            btn.style.filter = 'brightness(0.6)';
+            btn.style.boxShadow = 'none';
+        });
+
+        // Find and highlight the corresponding button
+        const buttonToHighlight = Array.from(courseButtons).find(btn =>
+            btn.getAttribute('onclick').includes(targetSection)
+        );
+
+        if (buttonToHighlight) {
+            buttonToHighlight.style.filter = 'brightness(1.2)';
+            buttonToHighlight.style.boxShadow = '0 0 20px rgba(255, 255, 255, 0.7)';
+        }
+    }
+
+    // Add click event listeners to course images
+    courseImages.forEach(image => {
+        image.addEventListener('click', (e) => {
+            // Get the target section from the href attribute
+            const targetSection = image.getAttribute('href').replace('#', '');
+
+            // Determine the section category based on the image's target
+            const sectionCategories = {
+                'autom-1': 'section-1',
+                'autom-2': 'section-1',
+                'electron-1': 'section-3',
+                'electron-2': 'section-3',
+                'sistem-1': 'section-4',
+                'sistem-2': 'section-4',
+                'potencia-1': 'section-5',
+                'potencia-2': 'section-5'
+            };
+
+            const categoryToHighlight = sectionCategories[targetSection];
+
+            if (categoryToHighlight) {
+                // Highlight the corresponding button
+                highlightButton(categoryToHighlight);
+            }
+        });
+    });
+
+    // Initial styling for buttons
+    courseButtons.forEach(button => {
         button.style.cursor = 'pointer';
         button.style.transition = 'all 0.3s ease';
         button.style.filter = 'brightness(0.6)';
-    }
-    // Función para aplicar estilos al texto
-    function setButtonTextStyles(span) {
-        span.style.color = 'white';
-    }
 
-    // Inicializar estilos de todos los botones
-    courseButtons.forEach(button => {
-        setBaseButtonStyles(button);
-        setButtonTextStyles(button.querySelector('.block-button-text'));
+        const buttonText = button.querySelector('.block-button-text');
+        if (buttonText) {
+            buttonText.style.color = 'white';
+        }
 
-        // Añadir evento de clic
-        button.addEventListener('click', function() {
-            // Resetear todos los botones
+        // Existing click event for buttons
+        button.addEventListener('click', function () {
+            // Reset all buttons
             courseButtons.forEach(btn => {
-                btn.style.filter = 'brightness(0.4)';
+                btn.style.filter = 'brightness(0.6)';
                 btn.style.boxShadow = 'none';
             });
 
-            // Resaltar botón seleccionado
+            // Highlight selected button
             this.style.filter = 'brightness(1.2)';
             this.style.boxShadow = '0 0 20px rgba(255, 255, 255, 0.7)';
         });
