@@ -150,141 +150,89 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
-    const smallImage = document.querySelector(".image-block.imblock1");
-    const previewImage = document.querySelector(".preview.imagen1");
+    // Seleccionar todos los bloques de imágenes y elementos de vista previa
+    const imageBlocks = document.querySelectorAll('.image-block');
+    const previewImages = document.querySelectorAll('.preview');
 
-    // Mostrar la imagen al hacer clic en la imagen pequeña
-    smallImage.addEventListener("click", function () {
-        previewImage.style.display = "block";
-    });
+    // Función para crear el botón de cierre
+    function createCloseButton() {
+        const closeButton = document.createElement('button');
+        closeButton.innerHTML = '×';
+        closeButton.classList.add('preview-close-btn');
+        
+        // Estilos del botón de cierre
+        Object.assign(closeButton.style, {
+            position: 'absolute',
+            top: '10px',
+            right: '10px',
+            background: 'rgba(255, 255, 255, 0.8)',
+            color: 'black',
+            border: '3px solid black',
+            borderRadius: '50%',
+            width: '40px',
+            height: '40px',
+            fontSize: '30px',
+            cursor: 'pointer',
+            zIndex: '1000',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+        });
 
-    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
-    document.addEventListener("click", function (event) {
-        if (event.target !== smallImage && event.target !== previewImage) {
+        return closeButton;
+    }
+
+    // Función para configurar la vista previa de imágenes
+    function setupImagePreview(imageBlock, previewImage) {
+        const closeButton = createCloseButton();
+
+        // Mostrar vista previa al hacer clic en el bloque de imagen
+        imageBlock.addEventListener("click", function () {
+            previewImage.style.display = "block";
+            
+            // Añadir botón de cierre si no está presente
+            if (!previewImage.contains(closeButton)) {
+                previewImage.appendChild(closeButton);
+            }
+        });
+
+        // Función para ocultar la vista previa
+        function hidePreview() {
             previewImage.style.display = "none";
+        }
+
+        // Evento de clic en el botón de cierre
+        closeButton.addEventListener("click", hidePreview);
+
+        // Cerrar vista previa al hacer clic fuera
+        document.addEventListener("click", function (event) {
+            if (
+                event.target !== imageBlock &&
+                event.target !== previewImage &&
+                event.target !== closeButton &&
+                !previewImage.contains(event.target)
+            ) {
+                hidePreview();
+            }
+        });
+    }
+
+    // Configurar vista previa para cada bloque de imagen
+    imageBlocks.forEach((imageBlock, index) => {
+        const correspondingPreview = previewImages[index];
+        if (correspondingPreview) {
+            setupImagePreview(imageBlock, correspondingPreview);
         }
     });
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const smallImage = document.querySelector(".image-block.imblock2");
-    const previewImage = document.querySelector(".preview.imagen2");
 
-    // Mostrar la imagen al hacer clic en la imagen pequeña
-    smallImage.addEventListener("click", function () {
-        previewImage.style.display = "block";
-    });
 
-    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
-    document.addEventListener("click", function (event) {
-        if (event.target !== smallImage && event.target !== previewImage) {
-            previewImage.style.display = "none";
-        }
-    });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-    const smallImage = document.querySelector(".image-block.imblock3");
-    const previewImage = document.querySelector(".preview.imagen3");
-
-    // Mostrar la imagen al hacer clic en la imagen pequeña
-    smallImage.addEventListener("click", function () {
-        previewImage.style.display = "block";
-    });
-
-    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
-    document.addEventListener("click", function (event) {
-        if (event.target !== smallImage && event.target !== previewImage) {
-            previewImage.style.display = "none";
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const smallImage = document.querySelector(".image-block.imblock4");
-    const previewImage = document.querySelector(".preview.imagen4");
-
-    // Mostrar la imagen al hacer clic en la imagen pequeña
-    smallImage.addEventListener("click", function () {
-        previewImage.style.display = "block";
-    });
-
-    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
-    document.addEventListener("click", function (event) {
-        if (event.target !== smallImage && event.target !== previewImage) {
-            previewImage.style.display = "none";
-        }
-    });
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const smallImage = document.querySelector(".image-block.imblock5");
-    const previewImage = document.querySelector(".preview.imagen5");
-
-    // Mostrar la imagen al hacer clic en la imagen pequeña
-    smallImage.addEventListener("click", function () {
-        previewImage.style.display = "block";
-    });
-
-    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
-    document.addEventListener("click", function (event) {
-        if (event.target !== smallImage && event.target !== previewImage) {
-            previewImage.style.display = "none";
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const smallImage = document.querySelector(".image-block.imblock6");
-    const previewImage = document.querySelector(".preview.imagen6");
-
-    // Mostrar la imagen al hacer clic en la imagen pequeña
-    smallImage.addEventListener("click", function () {
-        previewImage.style.display = "block";
-    });
-
-    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
-    document.addEventListener("click", function (event) {
-        if (event.target !== smallImage && event.target !== previewImage) {
-            previewImage.style.display = "none";
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const smallImage = document.querySelector(".image-block.imblock7");
-    const previewImage = document.querySelector(".preview.imagen7");
-
-    // Mostrar la imagen al hacer clic en la imagen pequeña
-    smallImage.addEventListener("click", function () {
-        previewImage.style.display = "block";
-    });
-
-    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
-    document.addEventListener("click", function (event) {
-        if (event.target !== smallImage && event.target !== previewImage) {
-            previewImage.style.display = "none";
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const smallImage = document.querySelector(".image-block.imblock8");
-    const previewImage = document.querySelector(".preview.imagen8");
-
-    // Mostrar la imagen al hacer clic en la imagen pequeña
-    smallImage.addEventListener("click", function () {
-        previewImage.style.display = "block";
-    });
-
-    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
-    document.addEventListener("click", function (event) {
-        if (event.target !== smallImage && event.target !== previewImage) {
-            previewImage.style.display = "none";
-        }
-    });
-});
 
 document.addEventListener('DOMContentLoaded', function() {
     // Seleccionar todos los enlaces con href que comienzan con #
