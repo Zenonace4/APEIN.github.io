@@ -340,6 +340,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const courseButtons = document.querySelectorAll('.block-button');
     const courseImages = document.querySelectorAll('.swiper-slide a');
@@ -372,13 +376,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Determine the section category based on the image's target
             const sectionCategories = {
                 'autom-1': 'section-1',
-                'autom-2': 'section-1',
+                'electric-1': 'section-2',
                 'electron-1': 'section-3',
-                'electron-2': 'section-3',
                 'sistem-1': 'section-4',
-                'sistem-2': 'section-4',
                 'potencia-1': 'section-5',
-                'potencia-2': 'section-5'
             };
 
             const categoryToHighlight = sectionCategories[targetSection];
