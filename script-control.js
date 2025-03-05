@@ -252,6 +252,40 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const smallImage = document.querySelector(".image-block.imblock7");
+    const previewImage = document.querySelector(".preview.imagen7");
+
+    // Mostrar la imagen al hacer clic en la imagen pequeña
+    smallImage.addEventListener("click", function () {
+        previewImage.style.display = "block";
+    });
+
+    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
+    document.addEventListener("click", function (event) {
+        if (event.target !== smallImage && event.target !== previewImage) {
+            previewImage.style.display = "none";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const smallImage = document.querySelector(".image-block.imblock8");
+    const previewImage = document.querySelector(".preview.imagen8");
+
+    // Mostrar la imagen al hacer clic en la imagen pequeña
+    smallImage.addEventListener("click", function () {
+        previewImage.style.display = "block";
+    });
+
+    // Ocultar la imagen si se hace clic en cualquier parte fuera de ella
+    document.addEventListener("click", function (event) {
+        if (event.target !== smallImage && event.target !== previewImage) {
+            previewImage.style.display = "none";
+        }
+    });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     // Seleccionar todos los enlaces con href que comienzan con #
     const enlaces = document.querySelectorAll('a[href^="#"]');
