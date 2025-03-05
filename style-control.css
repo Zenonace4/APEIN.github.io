@@ -382,7 +382,7 @@ span.swiper-pagination-bullet-active {
 .preview img {
 
     height: 40rem;
-     max-width: 20rem;
+   
 }
 
 /* Novedades*/
@@ -2688,6 +2688,7 @@ Contactos
 
     .preview img {
         height: 25rem;
+          max-width: 20rem;
     }
 
     .header-section-capacitacion {
