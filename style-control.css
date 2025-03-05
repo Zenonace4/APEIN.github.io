@@ -369,8 +369,8 @@ span.swiper-pagination-bullet-active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 90vw;
-    max-height: 90vh;
+    max-width: 40rem;
+    max-height: 45rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     border: 3px solid #ddd;
     background: white;
@@ -379,13 +379,12 @@ span.swiper-pagination-bullet-active {
     border-radius: 10px;
 }
 
+.preview img {
 
-
-
-/* Mostrar la imagen de previsualización cuando se pase el mouse */
-.curso .imagen:hover+.preview {
-    display: block;
+    height: 40rem;
 }
+
+/* Novedades*/
 
 .novedades img {
     width: 470px;
@@ -1235,7 +1234,7 @@ div#item-16.item.tecnologia {
     margin-left: 0;
     margin-right: 0;
     text-align: center;
-    padding-inline:72px;
+    padding-inline: 72px;
 }
 
 .column-2 {
@@ -1350,7 +1349,7 @@ div#item-16.item.tecnologia {
     margin: 0.5rem;
 }
 
-.image-block {
+.img-block {
     flex: 1;
     background-size: contain;
     background-position: center;
@@ -2342,7 +2341,7 @@ TECNOLOGIA
         border-radius: 20px;
     }
 
-    .block-button{
+    .block-button {
         margin: 1rem auto;
     }
 
@@ -2681,6 +2680,15 @@ Contactos
     }
 
     /* -- Capacitacion -- */
+    /* Imagen grande de previsualización */
+    .preview {
+        max-height: 30rem;
+    }
+
+    .preview img {
+        height: 25rem;
+    }
+
     .header-section-capacitacion {
         flex-direction: column;
     }
@@ -2760,7 +2768,7 @@ Contactos
         font-size: 1rem;
     }
 
-    .image-block {
+    .img-block {
         max-width: 90%;
         margin: 5%;
     }
