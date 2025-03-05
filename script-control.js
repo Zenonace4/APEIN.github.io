@@ -350,3 +350,36 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const courseButtons = document.querySelectorAll('.block-button');
+    
+    // Función para aplicar estilos base a los botones
+    function setBaseButtonStyles(button) {
+        button.style.cursor = 'pointer';
+        button.style.transition = 'all 0.3s ease';
+        button.style.filter = 'brightness(0.6)';
+    }
+    // Función para aplicar estilos al texto
+    function setButtonTextStyles(span) {
+        span.style.color = 'white';
+    }
+
+    // Inicializar estilos de todos los botones
+    courseButtons.forEach(button => {
+        setBaseButtonStyles(button);
+        setButtonTextStyles(button.querySelector('.block-button-text'));
+
+        // Añadir evento de clic
+        button.addEventListener('click', function() {
+            // Resetear todos los botones
+            courseButtons.forEach(btn => {
+                btn.style.filter = 'brightness(0.4)';
+                btn.style.boxShadow = 'none';
+            });
+
+            // Resaltar botón seleccionado
+            this.style.filter = 'brightness(1.2)';
+            this.style.boxShadow = '0 0 20px rgba(255, 255, 255, 0.7)';
+        });
+    });
+});
