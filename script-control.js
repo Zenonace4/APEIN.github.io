@@ -416,3 +416,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+// Obtener el botón
+let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Calcular la distancia en rem
+const remValue = parseFloat(getComputedStyle(document.documentElement).fontSize);
+
+// Mostrar u ocultar el botón dependiendo de la distancia desplazada
+window.onscroll = function() {
+  if (document.body.scrollTop > 45 * remValue || document.documentElement.scrollTop > 45* remValue) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+
+// Función para hacer scroll hacia arriba cuando se presiona el botón
+scrollToTopBtn.onclick = function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
