@@ -1298,7 +1298,9 @@ div#item-16.item.tecnologia {
 /* Dropdown Sections */
 .section-dropdown {
     background: var(--white-wave);
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    width:100%;
 }
 
 .dropdown {
