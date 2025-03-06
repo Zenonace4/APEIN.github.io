@@ -1218,7 +1218,7 @@ div#item-16.item.tecnologia {
 /* Categories Section */
 .categories {
     width: 100%;
-    justify-items: center;
+    text-align: -webkit-center;
     background: var(--gray-mist);
 }
 
@@ -1299,7 +1299,7 @@ div#item-16.item.tecnologia {
 .section-dropdown {
     background: var(--white-wave);
     max-width: 1200px;
-    justify-self: center;
+    place-self: center;
 }
 
 .section-details {
