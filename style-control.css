@@ -1298,8 +1298,11 @@ div#item-16.item.tecnologia {
 /* Dropdown Sections */
 .section-dropdown {
     background: var(--white-wave);
+    place-items: center;
+}
+
+.dropdown {
     max-width: 1200px;
-    place-self: center;
 }
 
 .section-details {
