@@ -2851,21 +2851,7 @@ Contactos
     }
 
 
-    /* boton arriba */
-    #scrollToTopBtn {
-        position: fixed;
-        bottom: 1.5rem;
-        right: 80%;
-        display: none; /* Inicialmente oculto */
-        background-color: var(--steel-blue);
-        color: var(--white-wave);
-        border: 3px solid var(--ocean-blue);
-        border-radius: 50%;
-        padding: 8px 18px;
-        font-size: 30px;
-        cursor: pointer;
-    }
-
+  
     /* mapa */
 
     .mappp {
