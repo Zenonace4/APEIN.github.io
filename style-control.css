@@ -1310,6 +1310,7 @@ div#item-16.item.tecnologia {
 .section-details {
     display: none;
     flex-direction: column;
+    align-items: center;
 }
 
 .active {
