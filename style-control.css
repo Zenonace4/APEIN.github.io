@@ -380,9 +380,8 @@ span.swiper-pagination-bullet-active {
 }
 
 .preview img {
-
     height: 40rem;
-   
+    max-width: -webkit-fill-available;
 }
 
 /* Novedades*/
