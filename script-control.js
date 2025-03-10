@@ -216,10 +216,9 @@ function toggleSection(sectionId) {
 }
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     // Seleccionar todos los bloques de imágenes y elementos de vista previa
-    const imageBlocks = document.querySelectorAll('.curso .imagen.tr1');
+    const imageBlocks = document.querySelectorAll('.laborat .imagen');
     const previewImages = document.querySelectorAll('.preview.tr1');
 
     // Función para crear el botón de cierre
@@ -296,7 +295,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     // Seleccionar todos los bloques de imágenes y elementos de vista previa
-    const imageBlocks = document.querySelectorAll('.curso .imagen.tr2');
+    const imageBlocks = document.querySelectorAll('.novedades .imagen');
     const previewImages = document.querySelectorAll('.preview.tr2');
 
     // Función para crear el botón de cierre
@@ -373,7 +372,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     // Seleccionar todos los bloques de imágenes y elementos de vista previa
-    const imageBlocks = document.querySelectorAll('.curso .imagen.tr3');
+    const imageBlocks = document.querySelectorAll('.curso .imagen');
     const previewImages = document.querySelectorAll('.preview.tr3');
 
     // Función para crear el botón de cierre
@@ -450,7 +449,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     // Seleccionar todos los bloques de imágenes y elementos de vista previa
-    const imageBlocks = document.querySelectorAll('.curso .imagen.tr4');
+    const imageBlocks = document.querySelectorAll('.servicio .imagen');
     const previewImages = document.querySelectorAll('.preview.tr4');
 
     // Función para crear el botón de cierre
@@ -524,6 +523,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
 
 
 
