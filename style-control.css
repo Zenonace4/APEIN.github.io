@@ -369,7 +369,7 @@ span.swiper-pagination-bullet-active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 45rem;
+    max-width: 70rem;
     max-height: 45rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     border: 3px solid #ddd;
