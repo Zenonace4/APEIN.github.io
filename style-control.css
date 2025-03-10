@@ -393,7 +393,13 @@ span.swiper-pagination-bullet-active {
     margin: 70px 0 0 25px;
     text-align: center;
 }
-
+.servic img {
+    width: 470px;
+    height: 260px;
+    border-radius: 10px;
+    margin: 70px 0 0 25px;
+    text-align: center;
+}
 /* 12. Botones styles*/
 
 .botones {
