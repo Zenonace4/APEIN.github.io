@@ -1,4 +1,4 @@
-/* CSS Organized Structure */
+     /* CSS Organized Structure */
 /* 1. Google Font Imports */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=PT+Serif:wght@400;700&display=swap');
@@ -2715,7 +2715,22 @@ Contactos
     .preview {
         max-height: 30rem;
     }
-
+   .preview.tr1 img {
+        height: 16rem;
+          max-width: 20rem;
+    }
+     .preview.tr2 img {
+        height: 16rem;
+          max-width: 20rem;
+    }
+     .preview.tr3 img {
+        height: 16rem;
+          max-width: 20rem;
+    }
+     .preview.tr4 img {
+        height: 16rem;
+          max-width: 20rem;
+    }
     .preview img {
         height: 25rem;
           max-width: 20rem;
