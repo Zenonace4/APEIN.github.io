@@ -372,7 +372,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     // Seleccionar todos los bloques de imágenes y elementos de vista previa
-    const imageBlocks = document.querySelectorAll('.curso .imagen');
+    const imageBlocks = document.querySelectorAll('.curso .imagen.tr1');
     const previewImages = document.querySelectorAll('.preview.tr3');
 
     // Función para crear el botón de cierre
@@ -449,7 +449,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     // Seleccionar todos los bloques de imágenes y elementos de vista previa
-    const imageBlocks = document.querySelectorAll('.servicio .imagen');
+    const imageBlocks = document.querySelectorAll('.servicio .imagen.tr2');
     const previewImages = document.querySelectorAll('.preview.tr4');
 
     // Función para crear el botón de cierre
