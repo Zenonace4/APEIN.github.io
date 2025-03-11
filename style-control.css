@@ -1813,6 +1813,7 @@ div#item-16.item.tecnologia {
         flex-direction: column;
         margin: 0 0px;
         border-radius: 15px;
+        height: -webkit-fill-available;
     }
 
     .slider-txt {
