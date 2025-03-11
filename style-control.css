@@ -1822,6 +1822,8 @@ div#item-16.item.tecnologia {
         margin-top: 0px;
         padding-top: 20px;
         padding-bottom: 0px;
+        height: -webkit-fill-available;
+        align-content: center;
     }
 
     .slider-txt h2 {
