@@ -1062,9 +1062,10 @@ Table of Contents:
 
 
 .description.tecnologia p {
-    margin: 20px 30px;
-    color: var(--black);
-    text-align: justify;
+     margin: 20px 30px;
+     color: var(--black);
+     text-align: justify;
+     font-size: 1.3rem;
 }
 
 /* Technology Categories */
@@ -1270,6 +1271,7 @@ div#item-16.item.tecnologia {
 .description p {
     text-align: justify;
     margin: 1rem;
+    font-size: 1.3rem;c
 }
 
 /* Button Components */
