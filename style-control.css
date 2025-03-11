@@ -2775,6 +2775,7 @@ Contactos
 
     .swiper-slide img {
         width: -webkit-fill-available;
+         height: 15rem;
     }
 
     .column-1 {
