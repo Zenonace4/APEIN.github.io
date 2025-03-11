@@ -2832,6 +2832,9 @@ Contactos
     .header-section-servicios {
         background-size: cover;
     }
+     .service-text h1 {
+        font-size:1.8rem;
+    }
 
     .item {
         height: 50vh;
