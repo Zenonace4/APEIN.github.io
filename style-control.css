@@ -456,6 +456,7 @@ span.swiper-pagination-bullet-active {
 .autom-autom-txt h2 {
     color: var(--black);
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .autom-autom-txt p {
@@ -495,6 +496,7 @@ span.swiper-pagination-bullet-active {
 .contr-contr-txt h2 {
     color: var(--black);
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .contr-contr-txt p {
