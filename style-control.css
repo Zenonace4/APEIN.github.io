@@ -2830,8 +2830,8 @@ Contactos
 
     /* -- Servicios -- */
     .header-section-servicios {
-        background-size: cover;
-    height: 16vh;
+     background-size: cover;
+     height: 16vh;
     }
      .service-text h1 {
         font-size:1.8rem;
