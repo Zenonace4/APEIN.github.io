@@ -1229,6 +1229,7 @@ div#item-16.item.tecnologia {
 
 .categorie {
     max-width: 1200px;
+     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
