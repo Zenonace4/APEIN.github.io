@@ -1784,12 +1784,12 @@ div#item-16.item.tecnologia {
 
     .titulo {
         margin-top: 69px;
-        padding: 10px 0;
+        padding: 20px 0;
     }
 
     .titulo h1 {
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .swiper-button-prev::after,
